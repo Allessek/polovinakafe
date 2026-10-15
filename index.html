@@ -1,0 +1,1823 @@
+<!doctype html>
+<html lang="cs">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Polovina kafe — kavárna Roudnice nad Labem</title>
+<meta name="description" content="Polovina kafe — malá kavárna na Třídě T. G. Masaryka v Roudnici nad Labem. Zrna od pražírny The Naughty Dog, notebook i pes vítáni, zrnková káva na doma, komunitní akce a workshopy. Otevřeno denně 7:30–17:00." />
+
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="Polovina kafe" />
+<meta property="og:title" content="Polovina kafe — kavárna na Třídě T. G. Masaryka v Roudnici nad Labem" />
+<meta property="og:description" content="Zrna od české pražírny The Naughty Dog, notebook i pes vítáni, zrnková káva na doma a komunitní akce. Otevřeno denně 7:30–17:00." />
+<meta property="og:image" content="images/stock-hero.jpg" />
+<meta property="og:locale" content="cs_CZ" />
+<meta name="twitter:card" content="summary_large_image" />
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "CafeOrCoffeeShop",
+  "name": "Polovina kafe",
+  "image": "images/stock-hero.jpg",
+  "servesCuisine": "Výběrová káva, zrnková káva na doma, domácí dezerty",
+  "priceRange": "100–200 Kč",
+  "telephone": "+420736727098",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Třída T. G. Masaryka 1084",
+    "addressLocality": "Roudnice nad Labem",
+    "postalCode": "413 01",
+    "addressCountry": "CZ"
+  },
+  "openingHoursSpecification": [
+    { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"], "opens": "07:30", "closes": "17:00" }
+  ],
+  "sameAs": [
+    "https://www.facebook.com/polovinakafe/",
+    "https://www.instagram.com/polovinakafe/"
+  ],
+  "amenityFeature": [
+    { "@type": "LocationFeatureSpecification", "name": "Vstup se psem i kočkou", "value": true },
+    { "@type": "LocationFeatureSpecification", "name": "Wi-Fi a práce na notebooku", "value": true }
+  ]
+}
+</script>
+
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48'%3E%3Ccircle cx='24' cy='24' r='19' fill='none' stroke='%23141414' stroke-width='3'/%3E%3Cpath d='M24 5a19 19 0 0 1 0 38z' fill='%23141414'/%3E%3C/svg%3E" />
+<meta name="theme-color" content="#e6e6e6" media="(prefers-color-scheme: light)" />
+<meta name="theme-color" content="#151515" media="(prefers-color-scheme: dark)" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;1,500;1,600&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+  *{box-sizing:border-box;}
+  :root{
+    --bg:#e6e6e6;
+    --bg-raised:#dadada;
+    --surface:#ffffff;
+    --ink:#141414;
+    --ink-dim:#5c5c5c;
+    --ink-faint:#969696;
+    --olive:#141414;
+    --olive-bright:#2b2b2b;
+    --olive-deep:#000000;
+    --stone:#808080;
+    --cream-foam:#ffffff;
+    --line:rgba(20,20,20,0.12);
+    --line-strong:rgba(20,20,20,0.26);
+    --shadow-sm: 0 8px 20px -12px rgba(20,20,20,0.22);
+    --shadow: 0 26px 54px -28px rgba(20,20,20,0.26);
+    --shadow-lg: 0 40px 80px -30px rgba(20,20,20,0.32);
+    --status-open:#4c7a3f;
+    --status-closed:#a8463a;
+    --radius-lg:4px;
+    --radius-md:3px;
+    --radius-sm:2px;
+    --ease: cubic-bezier(.16,.84,.44,1);
+    --ease-spring: cubic-bezier(.34,1.56,.64,1);
+  }
+  @media (prefers-color-scheme: dark){
+    :root:not([data-theme="light"]){
+      --bg:#151515; --bg-raised:#202020; --surface:#1a1a1a;
+      --ink:#f0f0f0; --ink-dim:#b8b8b8; --ink-faint:#8a8a8a;
+      --olive:#f0f0f0; --olive-bright:#ffffff; --olive-deep:#ffffff;
+      --stone:#808080;
+      --cream-foam:#1c1c1c;
+      --line:rgba(240,240,240,0.14); --line-strong:rgba(240,240,240,0.26);
+      --shadow-sm: 0 8px 20px -12px rgba(0,0,0,0.5);
+      --shadow: 0 26px 54px -28px rgba(0,0,0,0.6);
+      --shadow-lg: 0 40px 80px -30px rgba(0,0,0,0.7);
+    }
+  }
+  :root[data-theme="dark"]{
+    --bg:#151515; --bg-raised:#202020; --surface:#1a1a1a;
+    --ink:#f0f0f0; --ink-dim:#b8b8b8; --ink-faint:#8a8a8a;
+    --olive:#f0f0f0; --olive-bright:#ffffff; --olive-deep:#ffffff;
+    --stone:#808080;
+    --cream-foam:#1c1c1c;
+    --line:rgba(240,240,240,0.14); --line-strong:rgba(240,240,240,0.26);
+    --shadow-sm: 0 8px 20px -12px rgba(0,0,0,0.5);
+    --shadow: 0 26px 54px -28px rgba(0,0,0,0.6);
+    --shadow-lg: 0 40px 80px -30px rgba(0,0,0,0.7);
+  }
+
+  html{scroll-behavior:smooth;}
+  @media (prefers-reduced-motion: reduce){
+    html{scroll-behavior:auto;}
+    *{animation-duration:0.001ms !important; animation-iteration-count:1 !important; transition-duration:0.001ms !important;}
+  }
+  body{
+    margin:0;
+    background:var(--bg);
+    color:var(--ink);
+    font-family:'Montserrat', sans-serif;
+    font-weight:400;
+    line-height:1.65;
+    -webkit-font-smoothing:antialiased;
+    position:relative;
+  }
+  body::before{
+    content:"";
+    position:fixed; inset:0; z-index:2147483646;
+    pointer-events:none;
+    opacity:0.03;
+    mix-blend-mode:overlay;
+    background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  }
+  ::selection{ background:var(--ink); color:#ffffff; }
+  :focus-visible{ outline:2px solid var(--ink); outline-offset:3px; border-radius:2px; }
+  h1,h2,h3,h4{
+    font-family:'Playfair Display', serif;
+    font-weight:600;
+    margin:0 0 0.5em;
+    line-height:1.1;
+    letter-spacing:-0.012em;
+  }
+  p{margin:0 0 1em;}
+  a{color:inherit; text-decoration:none;}
+  img{max-width:100%; display:block;}
+  .icon{ display:inline-block; vertical-align:-0.15em; fill:none; stroke:currentColor; stroke-width:1.6; stroke-linecap:round; stroke-linejoin:round; flex-shrink:0; }
+  .icon-fill{ fill:currentColor; stroke:none; }
+  .display{font-family:'Montserrat', sans-serif; font-weight:600;}
+  .wrap{max-width:1180px; margin:0 auto; padding:0 24px;}
+  @keyframes fadeUp{
+    from{ opacity:0; transform:translateY(22px); }
+    to{ opacity:1; transform:translateY(0); }
+  }
+  .reveal{ opacity:0; animation:fadeUp .9s var(--ease) forwards; }
+  .reveal-1{ animation-delay:.05s; } .reveal-2{ animation-delay:.16s; }
+  .reveal-3{ animation-delay:.27s; } .reveal-4{ animation-delay:.38s; }
+  .reveal-5{ animation-delay:.49s; } .reveal-6{ animation-delay:.6s; }
+  .rv{ opacity:0; transform:translateY(28px); transition:opacity .9s var(--ease), transform .9s var(--ease); }
+  .rv.in{ opacity:1; transform:translateY(0); }
+  .rv.d1{ transition-delay:.12s; } .rv.d2{ transition-delay:.24s; }
+  .rv.d3{ transition-delay:.36s; } .rv.d4{ transition-delay:.48s; }
+  .section{padding:104px 0;}
+  @media (max-width:720px){ .section{padding:68px 0;} }
+  .section-raised{background:var(--bg-raised);}
+  .eyebrow{
+    font-family:'Montserrat', sans-serif;
+    text-transform:uppercase;
+    letter-spacing:0.16em;
+    font-size:0.76rem;
+    font-weight:600;
+    color:var(--olive-deep);
+    margin-bottom:16px;
+    display:flex; align-items:center; gap:10px;
+  }
+  .eyebrow::before{
+    content:""; width:26px; height:1.5px; background:var(--olive); display:inline-block;
+  }
+  .btn{
+    display:inline-flex; align-items:center; gap:8px;
+    padding:14px 26px;
+    border-radius:6px;
+    font-family:'Montserrat', sans-serif;
+    font-weight:600;
+    font-size:0.92rem;
+    cursor:pointer;
+    border:1.5px solid transparent;
+    position:relative; overflow:hidden;
+    transition:transform .2s ease, box-shadow .2s ease, background .2s ease, color .2s ease;
+    white-space:nowrap;
+  }
+  .btn-primary{ background:#ffffff; color:#141414; border-color:#141414; box-shadow:0 14px 30px -14px rgba(20,20,20,0.3); }
+  .btn-primary:hover{ background:#141414; color:#ffffff; border-color:#141414; transform:translateY(-2px); }
+  .btn-primary::after{
+    content:""; position:absolute; top:0; left:-60%; width:40%; height:100%;
+    background:linear-gradient(115deg, transparent, rgba(20,20,20,0.14), transparent);
+    transform:skewX(-20deg); animation:btnShine 4.5s ease-in-out infinite; pointer-events:none;
+  }
+  .btn-primary:hover::after{ animation-play-state:paused; opacity:0; }
+  @keyframes btnShine{ 0%, 55%{ left:-60%; } 85%, 100%{ left:140%; } }
+  @media (prefers-reduced-motion: reduce){ .btn-primary::after{ animation:none; display:none; } }
+  .btn-ghost{ background:transparent; border-color:var(--line-strong); color:var(--ink); }
+  .btn-ghost:hover{ background:var(--surface); border-color:var(--olive); transform:translateY(-2px); }
+  .btn:active{ transform:scale(.97); }
+
+  /* HEADER */
+  header{
+    position:sticky; top:0; z-index:50;
+    background:color-mix(in srgb, var(--bg) 88%, transparent);
+    backdrop-filter:blur(10px);
+    border-bottom:1px solid transparent;
+    transition:border-color .35s var(--ease), box-shadow .35s var(--ease);
+  }
+  header.scrolled{ border-bottom-color:var(--line); box-shadow:var(--shadow-sm); }
+  .nav{ display:flex; align-items:center; justify-content:space-between; padding:20px 24px; transition:padding .35s var(--ease); }
+  header.scrolled .nav{ padding:14px 24px; }
+  .logo{ font-family:'Playfair Display', serif; font-weight:600; font-size:1.3rem; display:flex; align-items:center; gap:10px; letter-spacing:-0.01em; }
+  .logo-mark{ width:26px; height:26px; color:var(--ink); flex-shrink:0; transition:transform .5s var(--ease-spring); }
+  .logo:hover .logo-mark{ transform:rotate(180deg); }
+  .nav-links{ display:flex; align-items:center; gap:34px; font-weight:500; }
+  .nav-links a{ position:relative; padding:4px 1px; color:var(--ink); font-size:0.94rem; font-family:'Montserrat', sans-serif; font-weight:500; }
+  .nav-links a::after{
+    content:""; position:absolute; left:50%; bottom:-2px; width:0; height:1.5px;
+    background:var(--olive); transition:width .3s var(--ease), left .3s var(--ease); transform:translateX(-50%);
+  }
+  .nav-links a:hover::after{ width:100%; left:50%; }
+  .status-badge{
+    display:inline-flex; align-items:center; gap:9px; font-size:0.8rem; font-weight:600;
+    padding:8px 15px; border-radius:6px; background:var(--surface); border:1px solid var(--line);
+    font-family:'Montserrat', sans-serif;
+  }
+  .status-dot{ width:7px; height:7px; border-radius:50%; background:var(--status-closed); box-shadow:0 0 0 3px color-mix(in srgb, var(--status-closed) 22%, transparent); flex-shrink:0; }
+  .status-badge.open{ border-color:color-mix(in srgb, var(--status-open) 35%, var(--line)); }
+  .status-badge.open .status-dot{ background:var(--status-open); box-shadow:0 0 0 3px color-mix(in srgb, var(--status-open) 22%, transparent); animation:pulseDot 2.2s ease-in-out infinite; }
+  @keyframes pulseDot{ 0%,100%{ box-shadow:0 0 0 3px color-mix(in srgb, var(--status-open) 22%, transparent);} 50%{ box-shadow:0 0 0 7px color-mix(in srgb, var(--status-open) 10%, transparent);} }
+  .burger{ display:none; flex-direction:column; justify-content:center; gap:5px; width:40px; height:40px; background:none; border:none; cursor:pointer; padding:6px; }
+  .burger .bar{ width:100%; height:1.5px; background:var(--ink); border-radius:2px; transition:transform .35s var(--ease), opacity .35s var(--ease); }
+  header.menu-open .burger .bar:nth-child(1){ transform:translateY(6.5px) rotate(45deg); }
+  header.menu-open .burger .bar:nth-child(2){ opacity:0; }
+  header.menu-open .burger .bar:nth-child(3){ transform:translateY(-6.5px) rotate(-45deg); }
+  .mobile-panel{ display:grid; grid-template-rows:0fr; opacity:0; transition:grid-template-rows .4s var(--ease), opacity .3s var(--ease); }
+  .mobile-panel-inner{ overflow:hidden; }
+  .mobile-panel-content{ display:flex; flex-direction:column; gap:4px; padding:4px 24px 22px; border-top:1px solid var(--line); }
+  .mobile-panel a{ padding:13px 4px; font-weight:500; font-family:'Montserrat', sans-serif; border-bottom:1px solid var(--line); }
+  header.menu-open .mobile-panel{ grid-template-rows:1fr; opacity:1; }
+  @media (max-width:860px){ .nav-links{display:none;} .burger{display:flex;} }
+
+  /* HERO — split black/white diptych */
+  .hero-split{
+    position:relative; height:100svh; min-height:560px; overflow:hidden; isolation:isolate;
+    background:linear-gradient(90deg, #0a0a0a 50%, #f4f4f2 50%);
+  }
+  .hero-split-img{
+    position:absolute; top:0; left:50%; height:100%; width:auto; max-width:none;
+    transform:translateX(-50%) scale(1);
+    animation:heroImgIn 1.8s var(--ease) both, heroImgDrift 22s ease-in-out 1.8s infinite alternate;
+  }
+  @keyframes heroImgIn{ from{ opacity:0; transform:translateX(-50%) scale(1.08); } to{ opacity:1; transform:translateX(-50%) scale(1); } }
+  @keyframes heroImgDrift{ from{ transform:translateX(-50%) scale(1); } to{ transform:translateX(-50%) scale(1.045); } }
+  .hero-top-bar{
+    position:absolute; z-index:2; top:92px; left:0; right:0; padding:0 24px;
+    display:flex; justify-content:space-between; gap:12px; color:#fff; mix-blend-mode:difference;
+    font-family:'Montserrat', sans-serif; font-size:0.68rem; font-weight:600; letter-spacing:0.18em; text-transform:uppercase;
+    opacity:0; animation:heroFadeDown .9s var(--ease) .5s both;
+  }
+  @keyframes heroFadeDown{ from{ opacity:0; transform:translateY(-10px); } to{ opacity:1; transform:translateY(0); } }
+  @media (max-width:700px){ .hero-top-bar span:nth-child(2){ display:none; } }
+  .hero-giant-title{
+    position:absolute; z-index:2; left:0; right:0; bottom:clamp(300px,52vh,480px); text-align:center;
+    color:#fff; mix-blend-mode:difference; font-family:'Playfair Display', serif; font-weight:600;
+    font-size:min(13.5vw, 200px); line-height:0.86; letter-spacing:-0.02em; white-space:nowrap; pointer-events:none;
+  }
+  .hero-giant-title .mask{ display:inline-block; overflow:hidden; vertical-align:top; }
+  .hero-giant-title .run{ display:inline-block; animation:heroRise 1.2s var(--ease) .35s both; }
+  .hero-giant-title .mask+.mask .run{ font-style:italic; font-weight:500; animation-delay:.52s; margin-left:0.16em; }
+  @keyframes heroRise{ from{ transform:translateY(105%); } to{ transform:none; } }
+  @media (max-width:520px){ .hero-giant-title{ font-size:16vw; bottom:clamp(220px,40vh,340px); } }
+  .hero-scroll-cue{
+    position:absolute; z-index:2; left:50%; bottom:30px; transform:translateX(-50%);
+    display:flex; flex-direction:column; align-items:center; gap:6px; color:#fff; mix-blend-mode:difference;
+    font-family:'Montserrat', sans-serif; font-size:0.68rem; letter-spacing:0.14em; text-transform:uppercase;
+    opacity:0; animation:heroFadeUp .9s var(--ease) .9s both;
+  }
+  @keyframes heroFadeUp{ from{ opacity:0; transform:translate(-50%, 10px); } to{ opacity:1; transform:translate(-50%, 0); } }
+  .hero-scroll-cue .chev{ width:11px; height:11px; border-right:1.5px solid currentColor; border-bottom:1.5px solid currentColor; transform:rotate(45deg); animation:bob 1.8s ease-in-out infinite; }
+  @keyframes bob{ 0%,100%{ transform:rotate(45deg) translate(0,0);} 50%{ transform:rotate(45deg) translate(4px,4px);} }
+
+  /* HERO INTRO — details strip right below the split hero */
+  .hero-intro{ padding:72px 0 48px; }
+  @media (max-width:720px){ .hero-intro{ padding:52px 0 36px; } }
+  .hero-intro-grid{ display:grid; grid-template-columns:1.1fr 0.9fr; gap:56px; align-items:start; }
+  @media (max-width:860px){ .hero-intro-grid{ grid-template-columns:1fr; gap:28px; } }
+  .hero-intro h2{ font-size:clamp(1.8rem, 3.6vw, 2.6rem); margin-bottom:0.4em; }
+  .hero-intro h2 em{ font-style:italic; font-weight:500; color:var(--ink-dim); }
+  .hero-sub{ font-size:1.08rem; color:var(--ink-dim); max-width:460px; }
+  .hero-meta{ display:flex; flex-wrap:wrap; gap:12px; margin:22px 0 26px; }
+  .meta-chip{
+    display:flex; align-items:center; gap:9px; background:var(--surface); border:1px solid var(--line);
+    padding:9px 15px; border-radius:6px; font-size:0.86rem; font-weight:500; font-family:'Montserrat', sans-serif;
+    box-shadow:var(--shadow-sm); transition:transform .3s var(--ease), box-shadow .3s var(--ease);
+  }
+  .meta-chip:hover{ transform:translateY(-3px); box-shadow:var(--shadow); }
+  .hero-ctas{ display:flex; gap:12px; flex-wrap:wrap; }
+  .meta-chip .status-glow{ width:7px; height:7px; border-radius:50%; background:var(--status-closed); flex-shrink:0; box-shadow:0 0 0 3px color-mix(in srgb, var(--status-closed) 20%, transparent); }
+  .meta-chip.open .status-glow{ background:var(--status-open); box-shadow:0 0 0 3px color-mix(in srgb, var(--status-open) 18%, transparent); animation:pulseDot 2.2s ease-in-out infinite; }
+
+  /* USP STRIP */
+  .dock-wrap{ display:flex; justify-content:center; margin-top:-8px; position:relative; z-index:3; }
+  @media (max-width:900px){ .dock-wrap{margin-top:28px;} }
+  .icon-btns{
+    display:grid; grid-template-columns:repeat(4, 1fr); gap:2.4em;
+    width:100%; max-width:720px;
+    margin:auto; padding:2.2em 1.5em 2.8em; overflow:visible;
+  }
+  @media (max-width:720px){ .icon-btns{ grid-template-columns:repeat(2, 1fr); gap:2.6em 1.6em; } }
+  .icon-btn{
+    background-color:transparent; outline:none; position:relative;
+    width:5.4em; height:5.4em; margin:0 auto;
+    perspective:24em; transform-style:preserve-3d;
+    -webkit-tap-highlight-color:transparent; border:none; cursor:pointer;
+  }
+  .icon-btn__back, .icon-btn__front, .icon-btn__label{
+    transition:opacity .3s cubic-bezier(.83,0,.17,1), transform .3s cubic-bezier(.83,0,.17,1);
+  }
+  .icon-btn__back, .icon-btn__front{ border-radius:1.25em; position:absolute; top:0; left:0; width:100%; height:100%; }
+  .icon-btn__back{
+    background:linear-gradient(135deg, #2b2b2b, #0a0a0a);
+    box-shadow:0.5em -0.5em 0.75em rgba(20,20,20,0.18);
+    display:block; transform:rotate(15deg); transform-origin:100% 100%; will-change:transform;
+  }
+  .icon-btn__front{
+    background-color:rgba(255,255,255,0.22);
+    box-shadow:0 0 0 0.1em rgba(255,255,255,0.4) inset;
+    backdrop-filter:blur(0.75em); -webkit-backdrop-filter:blur(0.75em);
+    display:flex; transform-origin:80% 50%; will-change:transform;
+  }
+  .icon-btn__icon{ margin:auto; width:1.6em; height:1.6em; display:flex; align-items:center; justify-content:center; font-size:1.3rem; color:#fff; }
+  .icon-btn__label{
+    font-family:'Montserrat', sans-serif; font-weight:500; color:var(--ink);
+    font-size:0.86rem; white-space:nowrap; text-align:center; line-height:2;
+    opacity:0; position:absolute; top:100%; right:0; left:0; transform:translateY(0);
+  }
+  .icon-btn:focus-visible .icon-btn__back, .icon-btn:hover .icon-btn__back{ transform:rotate(25deg) translate3d(-0.5em,-0.5em,0.5em); }
+  .icon-btn:focus-visible .icon-btn__front, .icon-btn:hover .icon-btn__front{ transform:translate3d(0,0,2em); }
+  .icon-btn:focus-visible .icon-btn__label, .icon-btn:hover .icon-btn__label{ opacity:1; transform:translateY(20%); }
+
+  /* SECTION HEADS */
+  .section-head{ max-width:640px; margin:0 auto 48px; text-align:center; }
+  .section-head.left{ margin:0 0 44px; text-align:left; }
+  .section-head h2{ font-size:clamp(1.9rem, 3.8vw, 2.7rem); }
+  .section-head h2 em, .about-grid h2 em{ font-style:italic; font-weight:500; color:var(--ink-dim); }
+  .section-head p{ color:var(--ink-dim); font-size:1.04rem; }
+  .about-grid h2{ font-size:clamp(1.9rem, 3.6vw, 2.5rem); }
+
+  /* DIVIDER with brand mark */
+  .mark-divider{ display:flex; align-items:center; justify-content:center; gap:18px; margin:0 0 56px; }
+  .mark-divider .line{ height:1px; width:64px; background:var(--line-strong); }
+  .mark-divider svg{ width:22px; height:22px; color:var(--olive-deep); flex-shrink:0; }
+  .ornament{ display:flex; align-items:center; justify-content:center; gap:10px; margin:0 0 26px; }
+  .ornament .oline{ height:1px; width:40px; background:var(--line-strong); }
+  .ornament .odot{ width:4px; height:4px; border-radius:50%; background:var(--ink-faint); flex-shrink:0; }
+  .ornament .odiamond{ width:9px; height:9px; background:#ffffff; border:1px solid #141414; transform:rotate(45deg); flex-shrink:0; }
+
+  /* V ŠÁLKU — split color/grayscale disc showcase */
+  @property --s{ syntax:'<percentage>'; inherits:true; initial-value:50%; }
+  .cups{ background:#141414; color:#f4f4f2; padding:96px 0; }
+  @media (max-width:720px){ .cups{ padding:64px 0; } }
+  .cups-head{ display:flex; justify-content:space-between; align-items:flex-end; gap:24px; flex-wrap:wrap; margin-bottom:56px; }
+  .cups-head .eyebrow{ color:#b8b8b4; }
+  .cups-head h2{ color:#f4f4f2; margin:0; }
+  .cups-head h2 em{ font-style:italic; font-weight:500; color:#8a8a84; }
+  .cups-hint{ font-size:0.74rem; letter-spacing:0.16em; text-transform:uppercase; color:#8a8a84; font-family:'Montserrat', sans-serif; white-space:nowrap; }
+  .cups-row{ display:grid; grid-template-columns:repeat(3, 1fr); gap:clamp(18px, 4vw, 64px); }
+  @media (max-width:720px){ .cups-row{ grid-template-columns:1fr; max-width:320px; margin:0 auto; gap:48px; } }
+  .cups-row figure{ margin:0; }
+  .disc{ position:relative; aspect-ratio:1; border-radius:50%; overflow:hidden; --s:50%; transition:--s 1.1s var(--ease); cursor:pointer; }
+  .disc img{ position:absolute; inset:0; width:100%; height:100%; object-fit:cover; }
+  .disc img.g{ filter:grayscale(1) contrast(1.15) brightness(1.05); }
+  .disc img.c{ clip-path:inset(0 0 0 var(--s)); }
+  .disc::after{ content:""; position:absolute; inset:0; border-radius:50%; box-shadow:inset 0 0 0 1px rgba(244,244,242,0.25); pointer-events:none; }
+  .disc:hover, .disc:focus-visible{ --s:0%; }
+  .cups-row figcaption{ display:flex; justify-content:space-between; align-items:baseline; gap:10px; margin-top:18px; }
+  .cups-row figcaption b{ font-family:'Playfair Display', serif; font-weight:500; font-style:italic; font-size:clamp(1.2rem, 2vw, 1.6rem); color:#f4f4f2; }
+  .cups-row figcaption span{ font-size:0.72rem; letter-spacing:0.1em; text-transform:uppercase; color:#8a8a84; font-family:'Montserrat', sans-serif; white-space:nowrap; }
+
+  /* ABOUT / ATMOSFERA */
+  .about-grid{ display:grid; grid-template-columns:0.9fr 1.1fr; gap:56px; align-items:center; }
+  @media (max-width:900px){ .about-grid{grid-template-columns:1fr;} }
+  .about-art{ aspect-ratio:4/5; position:relative; padding:20px; }
+  .about-art img{
+    width:100%; height:100%; object-fit:cover; object-position:35% 38%; border-radius:var(--radius-lg);
+    filter:drop-shadow(0 22px 26px rgba(20,20,20,0.3));
+    transition:transform .8s var(--ease);
+  }
+  .about-art::after{
+    content:""; position:absolute; inset:20px; pointer-events:none; border-radius:var(--radius-lg);
+    box-shadow:inset 0 0 36px 18px var(--bg);
+  }
+  .about-art:hover img{ transform:scale(1.04); }
+  .pill-row{ display:flex; flex-wrap:wrap; gap:10px; margin-top:24px; }
+  .pill{ display:inline-flex; align-items:center; gap:8px; background:var(--surface); border:1px solid var(--line); padding:9px 15px; border-radius:6px; font-size:0.84rem; font-weight:500; font-family:'Montserrat', sans-serif; }
+
+  /* PRAVIDLA — numbered charter list */
+  .charter-list{ max-width:760px; margin:0 auto; }
+  .charter-row{
+    position:relative; display:grid; grid-template-columns:96px 1fr; gap:clamp(16px,4vw,36px);
+    padding:clamp(26px,4vw,40px) 0; padding-left:20px;
+    border-bottom:1px solid var(--line); border-left:2px solid transparent;
+    transition:border-color .3s var(--ease), background .3s var(--ease);
+  }
+  .charter-row:hover{ border-left-color:var(--ink); background:color-mix(in srgb, var(--ink) 3%, transparent); }
+  .charter-row:last-child{ border-bottom:none; }
+  .charter-num{ font-family:'Playfair Display', serif; font-weight:600; font-size:clamp(30px,4vw,44px); line-height:1; color:var(--ink-faint); }
+  .charter-num small{ display:block; font-family:'Montserrat', sans-serif; font-weight:500; color:var(--ink-dim); font-size:0.66rem; letter-spacing:0.16em; text-transform:uppercase; margin-top:8px; }
+  .charter-row h4{ font-family:'Playfair Display', serif; font-weight:600; font-size:clamp(1.2rem, 2.2vw, 1.5rem); margin-bottom:8px; }
+  .charter-row p{ color:var(--ink-dim); font-size:0.98rem; margin:0; }
+  .charter-quote{ margin-top:12px; font-family:'Playfair Display', serif; font-style:italic; font-weight:500; color:var(--ink); font-size:0.94rem; }
+  @media (max-width:560px){ .charter-row{ grid-template-columns:1fr; padding-left:16px; } }
+
+  /* BARISTOVA POZNÁMKA — skrytá, odhalí se na klik */
+  .note-box{ max-width:420px; margin:40px auto 0; text-align:center; }
+  .note-blocked{ display:flex; flex-direction:column; gap:8px; margin-bottom:16px; }
+  .note-blocked span{ display:block; height:12px; border-radius:2px; background:var(--line-strong); margin:0 auto; }
+  .note-blocked span:nth-child(1){ width:88%; }
+  .note-blocked span:nth-child(2){ width:70%; }
+  .note-blocked span:nth-child(3){ width:40%; }
+  .note-reveal{
+    font-family:'Playfair Display', serif; font-style:italic; font-weight:500;
+    font-size:1.02rem; line-height:1.6; color:var(--ink); margin:0 0 16px;
+    animation:noteIn .6s cubic-bezier(.16,1,.3,1);
+  }
+  @keyframes noteIn{ from{ opacity:0; transform:translateY(6px); } to{ opacity:1; transform:translateY(0); } }
+  .note-btn{
+    display:inline-flex; align-items:center; gap:9px; padding:10px 18px; border-radius:6px;
+    border:1px solid var(--line-strong); background:transparent; color:var(--ink-dim);
+    font-family:'Montserrat', sans-serif; font-size:0.72rem; letter-spacing:0.1em; text-transform:uppercase; font-weight:600;
+    cursor:pointer; transition:border-color .2s ease, color .2s ease, background .2s ease;
+  }
+  .note-btn:hover{ border-color:var(--ink); color:var(--ink); background:var(--surface); }
+  .note-box.revealed .note-blocked, .note-box.revealed .note-btn{ display:none; }
+
+  /* MOMENTKY — CircularGallery (WebGL, scroll-driven) */
+  #momentkyGallery{ width:100%; height:clamp(380px, 58vh, 580px); position:relative; }
+  .circular-gallery{ width:100%; height:100%; overflow:hidden; cursor:grab; }
+  .circular-gallery:active{ cursor:grabbing; }
+  .circular-gallery:focus-visible{ outline:2px solid var(--ink); outline-offset:4px; }
+
+  /* MENU */
+  .menu-category-photo{ position:relative; border-radius:var(--radius-lg); overflow:hidden; aspect-ratio:21/8; margin-bottom:36px; box-shadow:var(--shadow); }
+  @media (max-width:700px){ .menu-category-photo{ aspect-ratio:16/11; } }
+  .menu-category-photo img{ width:100%; height:100%; object-fit:cover; }
+  .menu-category-photo::after{ content:""; position:absolute; inset:0; background:linear-gradient(100deg, rgba(20,18,14,0.5) 0%, rgba(20,18,14,0.05) 55%); }
+  .menu-category-photo span{ position:absolute; left:28px; bottom:22px; z-index:2; font-family:'Montserrat', sans-serif; font-weight:600; font-size:1.2rem; color:#ffffff; }
+
+  /* MENU FILTR — "chasing thumb" segmented control */
+  .mfilter{ position:relative; display:inline-flex; max-width:100%; padding:4px; margin:0 auto 28px; border-radius:8px; background:var(--surface); border:1px solid var(--line); }
+  .mfilter-row{ display:flex; justify-content:center; }
+  .mfilter-thumb{
+    position:absolute; top:4px; bottom:4px; left:4px; width:0; border-radius:6px; background:var(--ink);
+    transition:left .38s cubic-bezier(.65,0,.35,1), width .38s cubic-bezier(.65,0,.35,1); z-index:0;
+  }
+  @media (prefers-reduced-motion: reduce){ .mfilter-thumb{ transition:none; } }
+  .mfilter-item{
+    position:relative; z-index:1; flex:none; padding:9px 18px; border:0; background:none; border-radius:6px;
+    font-family:'Montserrat', sans-serif; font-size:0.84rem; font-weight:600; white-space:nowrap; cursor:pointer;
+    color:var(--ink-dim); transition:color .3s ease;
+  }
+  .mfilter-item[aria-checked="true"]{ color:#fff; cursor:default; }
+  .mfilter-item:focus-visible{ outline:2px solid var(--ink); outline-offset:2px; }
+  .menu-card[hidden]{ display:none; }
+  .menu-grid{ display:grid; grid-template-columns:repeat(4, 1fr); gap:20px; }
+  @media (max-width:980px){ .menu-grid{grid-template-columns:repeat(2, 1fr);} }
+  @media (max-width:560px){ .menu-grid{grid-template-columns:1fr;} }
+  .menu-card{ background:var(--surface); border:1px solid var(--line); border-radius:var(--radius-md); overflow:hidden; padding:22px 20px; transition:transform .25s ease, box-shadow .25s ease; }
+  .menu-card:hover{ transform:translateY(-5px); box-shadow:var(--shadow); }
+  .menu-card .ic{ font-size:1.6rem; display:block; margin-bottom:12px; }
+  .menu-card h4{ font-size:1.02rem; margin-bottom:5px; }
+  .menu-card .desc{ color:var(--ink-dim); font-size:0.87rem; margin:0; }
+
+  /* AKCE / EVENTS */
+  .events-grid{ display:grid; grid-template-columns:1fr 1fr 1fr; gap:22px; }
+  @media (max-width:900px){ .events-grid{grid-template-columns:1fr;} }
+  .event-card{ background:var(--surface); border:1px solid var(--line); border-radius:var(--radius-md); overflow:hidden; box-shadow:var(--shadow-sm); transition:transform .25s ease, box-shadow .25s ease; }
+  .event-card:hover{ transform:translateY(-5px); box-shadow:var(--shadow); }
+  .event-card .tag{ display:inline-block; font-family:'Montserrat', sans-serif; font-size:0.72rem; font-weight:600; text-transform:uppercase; letter-spacing:0.08em; color:#141414; background:#ffffff; border:1px solid #141414; padding:5px 11px; border-radius:6px; margin-bottom:12px; }
+  .event-card .body{ padding:22px; }
+  .event-card h4{ font-size:1.08rem; margin-bottom:8px; }
+  .event-card p{ color:var(--ink-dim); font-size:0.9rem; margin:0; }
+  .events-photo{ position:relative; border-radius:var(--radius-lg); overflow:hidden; aspect-ratio:3/4; max-width:420px; margin:0 auto 36px; box-shadow:var(--shadow); }
+  .events-photo img{ width:100%; height:100%; object-fit:cover; }
+  .events-photo::after{ content:""; position:absolute; inset:0; background:linear-gradient(100deg, rgba(20,18,14,0.55) 0%, rgba(20,18,14,0.05) 55%); }
+  .events-photo span{ position:absolute; left:28px; bottom:22px; z-index:2; font-family:'Montserrat', sans-serif; font-weight:600; font-size:1.2rem; color:#ffffff; }
+
+  /* ESHOP */
+  #eshop{ background:#141414; color:#f4f4f2; }
+  #eshop .eyebrow{ color:#8a8a84; }
+  #eshop h2{ color:#f4f4f2; }
+  #eshop h2 em{ font-style:italic; font-weight:500; color:#8a8a84; }
+  #eshop .section-head p{ color:#bdbdb9; }
+  .zrnka-copy h2{ font-size:clamp(1.9rem, 3.8vw, 2.7rem); margin-bottom:0.4em; }
+  .zrnka-grid{ display:grid; grid-template-columns:0.8fr 1.2fr; gap:64px; align-items:center; margin-bottom:72px; }
+  @media (max-width:860px){ .zrnka-grid{ grid-template-columns:1fr; gap:40px; text-align:center; } }
+  .bag-wrap{ position:relative; max-width:300px; width:100%; margin:0 auto; }
+  .bag{
+    position:relative; aspect-ratio:3/4; width:100%; background:#000; color:#f4f4f2;
+    display:flex; flex-direction:column; justify-content:space-between; padding:26px;
+    box-shadow:var(--shadow-lg); transition:transform .7s var(--ease); border-radius:4px;
+  }
+  .bag-wrap:hover .bag{ transform:rotate(-2deg) translateY(-8px); }
+  .bag::before{
+    content:""; position:absolute; top:0; left:0; right:0; height:14px;
+    background:repeating-linear-gradient(90deg, #f4f4f2 0 6px, transparent 6px 12px); opacity:0.22;
+  }
+  .bag .bag-top{ display:flex; justify-content:space-between; font-size:0.66rem; letter-spacing:0.16em; text-transform:uppercase; margin-top:10px; font-family:'Montserrat', sans-serif; }
+  .bag .bag-mid{ font-family:'Playfair Display', serif; font-size:clamp(2.2rem, 5.2vw, 3rem); line-height:0.95; font-style:italic; }
+  .bag .bag-bot{ display:flex; justify-content:space-between; align-items:flex-end; font-size:0.66rem; letter-spacing:0.12em; text-transform:uppercase; font-family:'Montserrat', sans-serif; }
+  .bag .bag-mark{ width:36px; height:36px; color:#f4f4f2; flex-shrink:0; }
+  #eshop .zrnka-copy p{ color:#bdbdb9; max-width:460px; }
+  @media (max-width:860px){ #eshop .zrnka-copy p{ margin-left:auto; margin-right:auto; } }
+
+  /* BEFORE/AFTER — syrová vs. pražená zrna */
+  .ba-slider{
+    --ba-pos:50%; position:relative; max-width:360px; margin:clamp(40px,6vw,64px) auto 0;
+    aspect-ratio:4/3; border-radius:var(--radius-lg); overflow:hidden; box-shadow:var(--shadow-lg);
+  }
+  .ba-img{ position:absolute; inset:0; width:100%; height:100%; object-fit:cover; display:block; -webkit-user-drag:none; user-select:none; }
+  .ba-before-wrap{ position:absolute; inset:0; clip-path:inset(0 calc(100% - var(--ba-pos)) 0 0); will-change:clip-path; }
+  .ba-divider{ position:absolute; top:0; bottom:0; left:var(--ba-pos); width:2px; background:rgba(255,255,255,0.9); transform:translateX(-50%); pointer-events:none; box-shadow:0 0 0 1px rgba(0,0,0,0.2); }
+  .ba-handle{
+    position:absolute; top:50%; left:var(--ba-pos); width:42px; height:42px; transform:translate(-50%,-50%);
+    border-radius:50%; background:#fff; display:flex; align-items:center; justify-content:center;
+    box-shadow:0 10px 26px -8px rgba(0,0,0,0.5); cursor:ew-resize; touch-action:none; border:1px solid rgba(0,0,0,0.1);
+  }
+  .ba-handle svg{ color:#141414; }
+  .ba-handle:focus-visible{ outline:2px solid #fff; outline-offset:3px; }
+  .ba-label{
+    position:absolute; top:12px; z-index:3; font-family:'Montserrat', sans-serif;
+    font-size:0.64rem; letter-spacing:0.14em; text-transform:uppercase; font-weight:600;
+    color:#fff; background:rgba(20,20,20,0.55); backdrop-filter:blur(6px); padding:6px 11px; border-radius:6px; pointer-events:none;
+  }
+  .ba-label-before{ left:12px; }
+  .ba-label-after{ right:12px; }
+  .ba-caption{ margin:16px auto 0; max-width:360px; text-align:center; font-size:0.84rem; color:#bdbdb9; }
+  .eshop-grid{ display:grid; grid-template-columns:repeat(3, 1fr); gap:24px; margin-bottom:40px; }
+  @media (max-width:900px){ .eshop-grid{grid-template-columns:1fr 1fr;} }
+  @media (max-width:560px){ .eshop-grid{grid-template-columns:1fr;} }
+  .eshop-photo{ position:relative; border-radius:var(--radius-lg); overflow:hidden; aspect-ratio:4/5; box-shadow:var(--shadow); }
+  .eshop-photo img{ width:100%; height:100%; object-fit:cover; transition:transform .8s var(--ease); }
+  .eshop-photo:hover img{ transform:scale(1.04); }
+  .eshop-photo .price-tag{
+    position:absolute; right:16px; top:16px; background:var(--cream-foam); color:var(--ink);
+    font-family:'Montserrat', sans-serif; font-weight:600; font-size:0.84rem; padding:8px 14px;
+    border-radius:6px; box-shadow:var(--shadow-sm);
+  }
+  .eshop-photo .caption{ position:absolute; left:16px; bottom:16px; color:#ffffff; font-family:'Montserrat', sans-serif; font-weight:600; font-size:0.98rem; }
+  .eshop-note{ text-align:center; max-width:560px; margin:0 auto; }
+  #eshop .eshop-note p{ color:#bdbdb9; }
+  #eshop .btn-ghost{ border-color:rgba(244,244,242,0.3); color:#f4f4f2; }
+
+  /* CONTACT */
+  .contact-grid{ display:grid; grid-template-columns:1fr 1.1fr; gap:48px; }
+  @media (max-width:900px){ .contact-grid{grid-template-columns:1fr;} }
+  .info-card{ background:var(--surface); border:1px solid var(--line); border-radius:var(--radius-md); padding:32px; box-shadow:var(--shadow); }
+  .info-row{ display:flex; gap:14px; align-items:flex-start; padding:14px 0; border-bottom:1px solid var(--line); }
+  .info-row:last-child{ border-bottom:none; }
+  .info-row .ic{ font-size:1.2rem; width:26px; flex-shrink:0; }
+  .info-row strong{ display:block; font-size:0.94rem; font-family:'Montserrat', sans-serif; }
+  .info-row span.sub{ color:var(--ink-dim); font-size:0.88rem; }
+  .hours-table{ width:100%; border-collapse:collapse; margin-top:4px; }
+  .hours-table td{ padding:3px 0; font-size:0.9rem; }
+  .hours-table td:last-child{ text-align:right; font-weight:600; }
+  .social-row{ display:flex; gap:12px; margin-top:18px; }
+  .social-btn{ width:40px; height:40px; border-radius:50%; background:var(--bg-raised); display:flex; align-items:center; justify-content:center; font-size:1.1rem; border:1px solid var(--line); transition:transform .2s ease, background .2s ease; }
+  .social-btn:hover{ transform:translateY(-3px); background:var(--ink); }
+  .map-frame{ border-radius:var(--radius-md); overflow:hidden; border:1px solid var(--line); box-shadow:var(--shadow); min-height:360px; }
+  .map-frame iframe{ width:100%; height:100%; min-height:360px; border:0; display:block; }
+
+  /* RESERVATION — WhatsApp deep-link form, no backend */
+  .reserve-card{
+    position:relative; max-width:640px; margin:0 auto; background:var(--surface); border:1px solid var(--line);
+    border-radius:var(--radius-md); padding:clamp(24px,4vw,40px); box-shadow:var(--shadow); overflow:hidden;
+  }
+  .reserve-card::before{
+    content:""; position:absolute; inset:0; z-index:0; opacity:0.5; pointer-events:none;
+    background-image:radial-gradient(circle, color-mix(in srgb, var(--ink) 10%, transparent) 1.3px, transparent 1.6px);
+    background-size:16px 16px;
+  }
+  .reserve-card > *{ position:relative; z-index:1; }
+  .reserve-grid{ display:grid; grid-template-columns:1fr 1fr; gap:16px; }
+  @media (max-width:560px){ .reserve-grid{ grid-template-columns:1fr; } }
+  .reserve-field{ display:flex; flex-direction:column; gap:6px; }
+  .reserve-field.full{ grid-column:1 / -1; }
+  .reserve-field label{ font-family:'Montserrat', sans-serif; font-size:0.78rem; font-weight:600; letter-spacing:0.04em; color:var(--ink-dim); }
+  .reserve-field input, .reserve-field textarea{
+    font-family:'Montserrat', sans-serif; font-size:0.94rem; color:var(--ink);
+    background:var(--bg); border:1px solid var(--line); border-radius:6px; padding:11px 13px;
+    transition:border-color .2s ease;
+  }
+  .reserve-field input:focus, .reserve-field textarea:focus{ outline:none; border-color:var(--ink); }
+  .reserve-field textarea{ resize:vertical; min-height:70px; font-family:inherit; }
+  .reserve-actions{ display:flex; align-items:center; gap:16px; margin-top:22px; flex-wrap:wrap; }
+  .reserve-note{ font-size:0.82rem; color:var(--ink-faint); }
+
+  /* FOOTER — white bar, fixed independent of theme */
+  footer{ background:#ffffff; color:#141414; padding:56px 0 28px; border-top:1px solid rgba(20,20,20,0.12); }
+  .footer-grid{ display:flex; justify-content:space-between; flex-wrap:wrap; gap:32px; padding-bottom:36px; border-bottom:1px solid rgba(20,20,20,0.14); }
+  .footer-grid .logo{ color:#141414; }
+  .footer-grid .logo-mark{ color:#141414; }
+  footer p{ color:rgba(20,20,20,0.66); font-size:0.9rem; max-width:340px; }
+  .footer-links{ display:flex; gap:26px; flex-wrap:wrap; }
+  .footer-links a{ color:rgba(20,20,20,0.7); font-size:0.9rem; font-family:'Montserrat', sans-serif; }
+  .footer-links a:hover{ color:#000000; }
+  .footer-bottom{ display:flex; justify-content:space-between; flex-wrap:wrap; gap:10px; padding-top:22px; font-size:0.8rem; color:rgba(20,20,20,0.5); font-family:'Montserrat', sans-serif; }
+
+  /* ACCORDION GALLERY */
+  .accordion-gallery{
+    --ag-accent:#ffffff; --ag-overlay:#141414; --ag-text:#ffffff; --ag-gap:10px; --ag-radius:6px; --ag-media-size:320px;
+    display:flex; flex-direction:row; gap:var(--ag-gap); width:100%; max-width:100%;
+    height:440px; perspective:1400px; perspective-origin:50% 50%;
+  }
+  @media (max-width:720px){ .accordion-gallery{ height:auto; } }
+  .ag-panel{
+    position:relative; flex:1 1 0; min-width:0; min-height:0; overflow:hidden; border-radius:var(--ag-radius);
+    cursor:pointer; display:block; outline:none; transform-style:preserve-3d; transform-origin:center center;
+    background:var(--bg-raised); box-shadow:0 10px 30px -18px rgba(20,20,20,0.5); -webkit-tap-highlight-color:transparent;
+  }
+  .ag-panel:focus-visible{ box-shadow:0 0 0 2px var(--ag-accent), 0 10px 30px -18px rgba(20,20,20,0.5); }
+  .ag-panel__frame{ position:absolute; inset:0; overflow:hidden; border-radius:inherit; }
+  .ag-panel__media{
+    --ag-gray:1; --ag-dim:0.35; position:absolute; top:50%; left:50%;
+    width:var(--ag-media-size); height:100%; filter:grayscale(var(--ag-gray));
+  }
+  .ag-panel__media img{ width:100%; height:100%; object-fit:cover; display:block; user-select:none; -webkit-user-drag:none; }
+  .ag-panel__overlay{
+    position:absolute; inset:0; pointer-events:none;
+    background:linear-gradient(180deg, transparent 45%, color-mix(in srgb, var(--ag-overlay) 82%, transparent) 100%),
+               color-mix(in srgb, var(--ag-overlay) calc(var(--ag-dim, 0.35) * 100%), transparent);
+  }
+  .ag-panel__label{ position:absolute; left:20px; bottom:18px; right:20px; display:flex; align-items:center; gap:12px; pointer-events:none; z-index:2; }
+  .ag-panel__bar{ flex:0 0 auto; width:3px; height:24px; border-radius:3px; background:var(--ag-accent); opacity:0; }
+  .ag-panel__text{
+    color:var(--ag-text); font-family:'Playfair Display', serif; font-weight:600;
+    font-size:clamp(1rem,1.4vw,1.3rem); white-space:nowrap; overflow:hidden; text-overflow:ellipsis; opacity:0;
+  }
+  @media (max-width:720px){
+    .accordion-gallery{ flex-direction:column; perspective:none; }
+    .ag-panel{ min-height:84px; transform:none !important; }
+    .ag-panel__media{ width:100%; height:var(--ag-media-size); }
+  }
+  @media (prefers-reduced-motion: reduce){ .ag-panel, .ag-panel__media{ will-change:auto; } }
+</style>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+</head>
+<body>
+
+<canvas id="clickSparkCanvas" style="position:fixed; inset:0; width:100vw; height:100vh; pointer-events:none; z-index:2147483647;" aria-hidden="true"></canvas>
+
+<svg aria-hidden="true" style="position:absolute; width:0; height:0; overflow:hidden;">
+  <symbol id="i-pin" viewBox="0 0 24 24"><path d="M12 22s7-7.58 7-12.5A7 7 0 0 0 5 9.5C5 14.42 12 22 12 22Z"/><circle cx="12" cy="9.5" r="2.3"/></symbol>
+  <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.3 2"/></symbol>
+  <symbol id="i-paw" viewBox="0 0 24 24"><ellipse cx="12" cy="16" rx="5" ry="4"/><ellipse cx="5" cy="9.5" rx="2" ry="2.6"/><ellipse cx="10" cy="5.8" rx="2" ry="2.6"/><ellipse cx="15" cy="5.8" rx="2" ry="2.6"/><ellipse cx="19.5" cy="9.5" rx="2" ry="2.6"/></symbol>
+  <symbol id="i-coffee" viewBox="0 0 24 24"><path d="M4 8h13v6a5 5 0 0 1-5 5H9a5 5 0 0 1-5-5V8Z"/><path d="M17 9.5h1.5a2.5 2.5 0 0 1 0 5H17"/><path d="M7.5 4.2c0 1-1 1-1 2M11.5 4.2c0 1-1 1-1 2"/></symbol>
+  <symbol id="i-laptop" viewBox="0 0 24 24"><rect x="4" y="5" width="16" height="10" rx="1"/><path d="M2 19h20"/></symbol>
+  <symbol id="i-croissant" viewBox="0 0 24 24"><path d="M4 16C4 9 9 4 15 4c-2 2-3 4.5-3 7.3 0 3 1.3 5.7 3.5 7.5-2 1.6-4.6 2.2-7.2 1.6C6.3 19.8 4.7 18.1 4 16Z"/></symbol>
+  <symbol id="i-leaf" viewBox="0 0 24 24"><path d="M5 19c-1-7 3-13 14-14 1 10-4 15-14 14Z"/><path d="M6 18c3-4 6-7 12-11"/></symbol>
+  <symbol id="i-cake" viewBox="0 0 24 24"><path d="M3 20 12 4l9 16Z"/><path d="M8.5 12.5h7"/><path d="M3 20h18"/></symbol>
+  <symbol id="i-phone" viewBox="0 0 24 24"><path d="M6 3h3l1.5 4-2 1.5a12 12 0 0 0 7 7l1.5-2 4 1.5v3c0 1-1 2-2 2C11 20 4 13 4 5c0-1 1-2 2-2Z"/></symbol>
+  <symbol id="i-card" viewBox="0 0 24 24"><rect x="3" y="6" width="18" height="12" rx="1.5"/><path d="M3 10h18"/><path d="M7 14h4"/></symbol>
+  <symbol id="i-facebook" viewBox="0 0 24 24"><path d="M14 9.6V9h2.5V6H14c-2 0-3.5 1.5-3.5 3.5V11H8v3h2.5v6H14v-6h2.3l.5-3H14V9.6Z"/></symbol>
+  <symbol id="i-instagram" viewBox="0 0 24 24"><rect x="3.5" y="3.5" width="17" height="17" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17" cy="7" r="1" style="fill:currentColor;stroke:none"/></symbol>
+  <symbol id="i-cloud" viewBox="0 0 24 24"><path d="M7 18h10a4 4 0 0 0 .5-7.97 6 6 0 0 0-11.4.7A4 4 0 0 0 7 18Z"/></symbol>
+</svg>
+
+<header id="siteHeader">
+  <nav class="nav wrap">
+    <a href="#top" class="logo" aria-label="Polovina kafe — úvod">
+      <svg class="logo-mark" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="24" cy="24" r="19" fill="none" stroke="currentColor" stroke-width="3"/>
+        <path d="M24 5a19 19 0 0 1 0 38z" fill="currentColor"/>
+      </svg>
+      Polovina kafe
+    </a>
+    <div class="nav-links">
+      <a href="#o-nas">O nás</a>
+      <a href="#menu">Menu</a>
+      <a href="#akce">Akce</a>
+      <a href="#galerie">Galerie</a>
+      <a href="#eshop">E-shop</a>
+      <a href="#rezervace">Rezervace</a>
+      <a href="#kontakt">Kontakt</a>
+      <span class="status-badge" id="statusBadge"><span class="status-dot"></span><span id="statusText">Zjišťuji…</span></span>
+    </div>
+    <button class="burger" id="burgerBtn" aria-label="Otevřít menu" aria-expanded="false">
+      <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+    </button>
+  </nav>
+  <div class="mobile-panel" id="mobilePanel">
+    <div class="mobile-panel-inner">
+      <div class="mobile-panel-content">
+        <a href="#o-nas">O nás</a>
+        <a href="#menu">Menu</a>
+        <a href="#akce">Akce</a>
+        <a href="#galerie">Galerie</a>
+        <a href="#eshop">E-shop</a>
+        <a href="#rezervace">Rezervace</a>
+        <a href="#kontakt">Kontakt</a>
+        <span class="status-badge" style="margin-top:10px; align-self:flex-start;" id="statusBadgeMobile"><span class="status-dot"></span><span id="statusTextMobile">Zjišťuji…</span></span>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main id="top">
+
+  <header class="hero-split" id="top">
+    <img class="hero-split-img" src="images/stock-hero.jpg" alt="Espresso na rozhraní černé a bílé" fetchpriority="high" />
+    <div class="hero-top-bar">
+      <span>Výběrová káva</span><span>The Naughty Dog</span><span>Roudnice n. L.</span>
+    </div>
+    <h1 class="hero-giant-title" aria-label="Polovina Kafe"><span class="mask"><span class="run">Polovina</span></span><span class="mask"><span class="run">kafe</span></span></h1>
+    <div class="hero-scroll-cue"><span>Druhá půlka dne je vaše</span><span class="chev"></span></div>
+  </header>
+
+  <section class="hero-intro">
+    <div class="wrap">
+      <div class="hero-intro-grid">
+        <div class="rv">
+          <div class="eyebrow">Třída T. G. Masaryka 1084 · Roudnice nad Labem</div>
+          <h2>Malá kavárna. <em>Vkus jednoho člověka.</em></h2>
+          <p class="hero-sub">Malá kavárna s vkusem jednoho člověka, ne velké značky. Zrna pálí česká pražírna The Naughty Dog, zbytek dne — notebook, pes, kniha — je na vás.</p>
+
+          <div class="hero-meta">
+            <span class="meta-chip"><svg class="icon" width="15" height="15"><use href="#i-pin"/></svg> Třída T. G. Masaryka 1084</span>
+            <span class="meta-chip" id="hoursChip"><span class="status-glow"></span><svg class="icon" width="15" height="15"><use href="#i-clock"/></svg> <span id="hoursChipText">Denně 7:30–17:00</span></span>
+            <span class="meta-chip"><svg class="icon" width="15" height="15"><use href="#i-paw"/></svg> Psi i kočky vítáni</span>
+            <span class="meta-chip" id="weatherChip" hidden><svg class="icon" width="15" height="15"><use href="#i-cloud"/></svg> <span id="weatherChipText"></span></span>
+          </div>
+
+          <div class="hero-ctas">
+            <a href="#menu" class="btn btn-primary">Podívat se na menu</a>
+            <a href="#eshop" class="btn btn-ghost">Koupit zrnkovou kávu</a>
+            <a href="#kontakt" class="btn btn-ghost">Najít nás</a>
+          </div>
+        </div>
+
+        <div class="dock-wrap rv d1">
+          <div class="icon-btns" role="group" aria-label="Co u nás najdete">
+            <button class="icon-btn" type="button" aria-label="Zrna The Naughty Dog">
+              <span class="icon-btn__back"></span>
+              <span class="icon-btn__front"><span class="icon-btn__icon" aria-hidden="true"><svg class="icon" width="26" height="26"><use href="#i-coffee"/></svg></span></span>
+              <span class="icon-btn__label">Zrna The Naughty Dog</span>
+            </button>
+            <button class="icon-btn" type="button" aria-label="Wi-Fi a zásuvky pro nomády">
+              <span class="icon-btn__back"></span>
+              <span class="icon-btn__front"><span class="icon-btn__icon" aria-hidden="true"><svg class="icon" width="26" height="26"><use href="#i-laptop"/></svg></span></span>
+              <span class="icon-btn__label">Wi-Fi &amp; zásuvky</span>
+            </button>
+            <button class="icon-btn" type="button" aria-label="Psi i kočky vítáni">
+              <span class="icon-btn__back"></span>
+              <span class="icon-btn__front"><span class="icon-btn__icon" aria-hidden="true"><svg class="icon icon-fill" width="26" height="26"><use href="#i-paw"/></svg></span></span>
+              <span class="icon-btn__label">Psi i kočky</span>
+            </button>
+            <button class="icon-btn" type="button" aria-label="Domácí dezerty">
+              <span class="icon-btn__back"></span>
+              <span class="icon-btn__front"><span class="icon-btn__icon" aria-hidden="true"><svg class="icon" width="26" height="26"><use href="#i-croissant"/></svg></span></span>
+              <span class="icon-btn__label">Domácí dezerty</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cups">
+    <div class="wrap">
+      <div class="cups-head">
+        <div class="rv">
+          <div class="eyebrow" style="color:#8a8a84;">V šálku</div>
+          <h2>Dvě poloviny <em>jednoho šálku.</em></h2>
+        </div>
+        <span class="cups-hint rv">Najeďte myší / klepněte</span>
+      </div>
+      <div class="cups-row">
+        <figure class="rv">
+          <div class="disc" tabindex="0">
+            <img class="g" src="images/disc-espresso.jpg" alt="" />
+            <img class="c" src="images/disc-espresso.jpg" alt="Espresso" />
+          </div>
+          <figcaption><b>Espresso</b><span>The Naughty Dog</span></figcaption>
+        </figure>
+        <figure class="rv d1">
+          <div class="disc" tabindex="0">
+            <img class="g" src="images/disc-latte.jpg" alt="" />
+            <img class="c" src="images/disc-latte.jpg" alt="Flat white" />
+          </div>
+          <figcaption><b>Flat white</b><span>Mléko &amp; espresso</span></figcaption>
+        </figure>
+        <figure class="rv d2">
+          <div class="disc" tabindex="0">
+            <img class="g" src="images/disc-filtr.jpg" alt="" />
+            <img class="c" src="images/disc-filtr.jpg" alt="Filtr" />
+          </div>
+          <figcaption><b>Filtr</b><span>Čerstvě pražená</span></figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="o-nas">
+    <div class="wrap about-grid">
+      <div class="about-art rv">
+        <img src="images/stock-about.jpg" alt="Ratanové křeslo v útulném kavárenském interiéru" loading="lazy" />
+      </div>
+      <div class="rv d1">
+        <div class="eyebrow">Místo, kde si klidně zabydlíte jeden stůl</div>
+        <p>Polovina kafe je malá kavárna, kde na vás čekají příjemné ceny a dobré espresso. Žádné fronty, žádné předvádění interiéru — jen pokoj, který má rád, když u něj zůstáváte déle. Psalo se o nás v Knize kaváren i v Knize o kávě — ale hlavně se k nám lidé vracejí pro kávu a klid.</p>
+        <div class="pill-row">
+          <span class="pill">Travertin &amp; ratan</span>
+          <span class="pill">Přijatelné ceny (100–200 Kč)</span>
+          <span class="pill">Zmiňuje Kniha o kávě</span>
+          <span class="pill">Vkus jednoho člověka</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap">
+      <div class="section-head rv">
+        <div class="eyebrow" style="justify-content:center;">Jak to tu funguje</div>
+        <h2>Tři věci, <em>na kterých trváme.</em></h2>
+      </div>
+      <div class="charter-list">
+        <div class="charter-row rv">
+          <div class="charter-num">I.<small>Menu</small></div>
+          <div>
+            <h4>Málo, ale pořádně</h4>
+            <p>Jedno espresso, jeden filtr, žádný nekonečný seznam sirupů. Radši uděláme pár věcí dobře, než spoustu věcí průměrně.</p>
+            <div class="charter-quote">„Menu, co se vejde na jednu stránku.“</div>
+          </div>
+        </div>
+        <div class="charter-row rv d1">
+          <div class="charter-num">II.<small>Zrna</small></div>
+          <div>
+            <h4>Zrna s adresou</h4>
+            <p>Kávu pálí The Naughty Dog, česká pražírna, se kterou spolupracujeme od začátku. Víme, odkud zrna jsou, a rádi vám to řekneme.</p>
+            <div class="charter-quote">„Žádná anonymní směs z velkoskladu.“</div>
+          </div>
+        </div>
+        <div class="charter-row rv d2">
+          <div class="charter-num">III.<small>Čas</small></div>
+          <div>
+            <h4>Zůstaňte, jak dlouho chcete</h4>
+            <p>Nikdo tu nekouká na hodinky. Notebook, kniha, pes u nohou — ten stůl je váš, dokud ho potřebujete.</p>
+            <div class="charter-quote">„Žádné fronty, žádné předvádění.“</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="note-box rv" id="noteBox">
+        <div class="note-blocked" aria-hidden="true"><span></span><span></span><span></span></div>
+        <p class="note-reveal" id="noteReveal" hidden>Nejlepší šálek dne bývá ten, co si uvaříme sami pro sebe, když je v kavárně prázdno.</p>
+        <button class="note-btn" id="noteBtn" type="button">Baristova poznámka</button>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-raised">
+    <div class="wrap">
+      <div class="section-head rv">
+        <div class="eyebrow" style="justify-content:center;">Momentky</div>
+        <h2>Kousek <em>každého dne.</em></h2>
+        <p>Táhněte myší nebo prstem — projeďte si napříč náladami kavárny.</p>
+      </div>
+    </div>
+    <div class="momentky-gallery rv d1" id="momentkyGallery"></div>
+  </section>
+
+  <section class="section" id="menu">
+    <div class="wrap">
+      <div class="section-head rv">
+        <div class="eyebrow" style="justify-content:center;">Co u nás najdete</div>
+        <h2>Pár věcí, <em>na které se vrací lidé nejčastěji.</em></h2>
+        <p>Výběrová káva od The Naughty Dog, poctivé domácí dezerty a jednoduché jídlo, které nezdržuje, když spěcháte zpátky k notebooku.</p>
+      </div>
+
+      <div class="menu-category-photo rv d1">
+        <img src="images/stock-menu.jpg" alt="Káva a croissant v dramatickém světle" loading="lazy" />
+        <span>Jídlo a pití, které stojí za pauzu</span>
+      </div>
+
+      <div class="mfilter-row rv">
+        <div class="mfilter" id="menuFilter" role="radiogroup" aria-label="Filtrovat nabídku">
+          <span class="mfilter-thumb" aria-hidden="true"></span>
+          <button type="button" class="mfilter-item" role="radio" aria-checked="true" data-filter="all">Vše</button>
+          <button type="button" class="mfilter-item" role="radio" aria-checked="false" data-filter="napoje">Nápoje</button>
+          <button type="button" class="mfilter-item" role="radio" aria-checked="false" data-filter="dezerty">Dezerty</button>
+        </div>
+      </div>
+
+      <div class="menu-grid" id="menuGrid">
+        <div class="menu-card rv" data-category="napoje"><span class="ic"><svg class="icon" width="26" height="26"><use href="#i-coffee"/></svg></span><h4>Filtr &amp; espresso</h4><p class="desc">Zrna The Naughty Dog, připravená tak, jak chuť zaslouží.</p></div>
+        <div class="menu-card rv d1" data-category="napoje"><span class="ic"><svg class="icon" width="26" height="26"><use href="#i-leaf"/></svg></span><h4>Matcha &amp; honey latte</h4><p class="desc">Oblíbené teplé i ledové verze pro pomalejší odpoledne.</p></div>
+        <div class="menu-card rv d2" data-category="dezerty"><span class="ic"><svg class="icon" width="26" height="26"><use href="#i-cake"/></svg></span><h4>Tvarohový koláč</h4><p class="desc">Domácí, hustý, podle hostů jeden z důvodů, proč se vracet.</p></div>
+        <div class="menu-card rv d3" data-category="dezerty"><span class="ic"><svg class="icon" width="26" height="26"><use href="#i-croissant"/></svg></span><h4>Cannoli &amp; dezerty</h4><p class="desc">Menší dobroty k odpolední kávě nebo na dobití energie.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-raised" id="akce">
+    <div class="wrap">
+      <div class="section-head rv">
+        <div class="ornament" aria-hidden="true"><span class="oline"></span><span class="odot"></span><span class="odiamond"></span><span class="odot"></span><span class="oline"></span></div>
+        <div class="eyebrow" style="justify-content:center;">Dění kolem kafe</div>
+        <h2>Víc než <em>káva.</em></h2>
+        <p>Mindfulness v úterý, pop-up s ručně šitým dětským oblečením v sobotu, malá dílna na kraslice před Velikonocemi — a čas od času i Polovina večera.</p>
+      </div>
+
+      <div class="events-photo rv d1">
+        <img src="images/stock-akce.jpg" alt="Ruční malování velikonočního vajíčka" loading="lazy" />
+        <span>Vždy něco nového na stole u dveří</span>
+      </div>
+
+      <div class="events-grid">
+        <div class="event-card rv">
+          <div class="body">
+            <span class="tag">Workshop</span>
+            <h4>Mindfulness v úterý</h4>
+            <p>Hodinka klidu uprostřed týdne, bez nutnosti předchozí zkušenosti.</p>
+          </div>
+        </div>
+        <div class="event-card rv d1">
+          <div class="body">
+            <span class="tag">Pop-up</span>
+            <h4>Ručně šité dětské oblečení</h4>
+            <p>Místní tvorba na prodej přímo v kavárně, občas i swap akce.</p>
+          </div>
+        </div>
+        <div class="event-card rv d2">
+          <div class="body">
+            <span class="tag">Sezónní</span>
+            <h4>Malování kraslic</h4>
+            <p>Dílna před Velikonocemi pro děti i dospělé, materiál zajištěn.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="galerie">
+    <div class="wrap">
+      <div class="section-head rv">
+        <div class="ornament" aria-hidden="true"><span class="oline"></span><span class="odot"></span><span class="odiamond"></span><span class="odot"></span><span class="oline"></span></div>
+        <div class="eyebrow" style="justify-content:center;">Galerie</div>
+        <h2>Šest nálad, <em>jedna kavárna.</em></h2>
+        <p>Najeďte na panel nebo se jím proklikejte šipkami — každý představuje jinou část nabídky Polovina kafe.</p>
+      </div>
+
+      <div class="accordion-gallery rv d1" id="galleryAccordion" role="list" aria-label="Galerie Polovina kafe">
+        <div class="ag-panel ag-panel--active" data-index="0" role="listitem" tabindex="0" aria-current="true" aria-label="Atmosféra">
+          <span class="ag-panel__frame">
+            <span class="ag-panel__media"><img src="images/stock-hero.jpg" alt="Espresso, editorialní atmosféra" draggable="false"></span>
+            <span class="ag-panel__overlay" aria-hidden="true"></span>
+          </span>
+          <span class="ag-panel__label"><span class="ag-panel__bar"></span><span class="ag-panel__text">Atmosféra</span></span>
+        </div>
+        <div class="ag-panel" data-index="1" role="listitem" tabindex="0" aria-label="Interiér">
+          <span class="ag-panel__frame">
+            <span class="ag-panel__media"><img src="images/stock-about.jpg" alt="Ratanové křeslo, útulný interiér" draggable="false"></span>
+            <span class="ag-panel__overlay" aria-hidden="true"></span>
+          </span>
+          <span class="ag-panel__label"><span class="ag-panel__bar"></span><span class="ag-panel__text">Interiér</span></span>
+        </div>
+        <div class="ag-panel" data-index="2" role="listitem" tabindex="0" aria-label="Pro nomády">
+          <span class="ag-panel__frame">
+            <span class="ag-panel__media"><img src="images/stock-nomad.jpg" alt="Latte art vedle notebooku" draggable="false"></span>
+            <span class="ag-panel__overlay" aria-hidden="true"></span>
+          </span>
+          <span class="ag-panel__label"><span class="ag-panel__bar"></span><span class="ag-panel__text">Pro nomády</span></span>
+        </div>
+        <div class="ag-panel" data-index="3" role="listitem" tabindex="0" aria-label="Menu">
+          <span class="ag-panel__frame">
+            <span class="ag-panel__media"><img src="images/stock-menu.jpg" alt="Káva a croissant v dramatickém světle" draggable="false"></span>
+            <span class="ag-panel__overlay" aria-hidden="true"></span>
+          </span>
+          <span class="ag-panel__label"><span class="ag-panel__bar"></span><span class="ag-panel__text">Menu</span></span>
+        </div>
+        <div class="ag-panel" data-index="4" role="listitem" tabindex="0" aria-label="Akce">
+          <span class="ag-panel__frame">
+            <span class="ag-panel__media"><img src="images/stock-akce.jpg" alt="Ruční malování velikonočního vajíčka" draggable="false"></span>
+            <span class="ag-panel__overlay" aria-hidden="true"></span>
+          </span>
+          <span class="ag-panel__label"><span class="ag-panel__bar"></span><span class="ag-panel__text">Akce</span></span>
+        </div>
+        <div class="ag-panel" data-index="5" role="listitem" tabindex="0" aria-label="Zrnková káva">
+          <span class="ag-panel__frame">
+            <span class="ag-panel__media"><img src="images/eshop-beans.jpg" alt="Čerstvě pražená zrnková káva" draggable="false"></span>
+            <span class="ag-panel__overlay" aria-hidden="true"></span>
+          </span>
+          <span class="ag-panel__label"><span class="ag-panel__bar"></span><span class="ag-panel__text">Zrnková káva</span></span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="eshop">
+    <div class="wrap">
+      <div class="zrnka-grid">
+        <div class="bag-wrap rv">
+          <div class="bag" aria-hidden="true">
+            <div class="bag-top"><span>The Naughty Dog</span><span>250 g</span></div>
+            <div class="bag-mid">Zrnka<br>s sebou</div>
+            <div class="bag-bot">
+              <span>Výběrová<br>káva</span>
+              <svg class="bag-mark" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="24" cy="24" r="19" fill="none" stroke="currentColor" stroke-width="3"/>
+                <path d="M24 5a19 19 0 0 1 0 38z" fill="currentColor"/>
+              </svg>
+            </div>
+          </div>
+        </div>
+        <div class="zrnka-copy rv d1">
+          <div class="eyebrow">Zrnková káva na doma</div>
+          <h2>Naše zrna si teď <em>můžete vzít domů.</em></h2>
+          <p>Zrna od české pražírny The Naughty Dog, se kterou spolupracujeme od úplného začátku, teď jezdí i poštou. Mějte doma stejnou kávu, jakou vaříme za barem.</p>
+        </div>
+      </div>
+
+      <div class="ba-slider rv" id="baSlider">
+        <img class="ba-img" src="images/ba-roasted.jpg" alt="Pražená zrna" />
+        <div class="ba-before-wrap">
+          <img class="ba-img" src="images/ba-green.jpg" alt="Syrová zrna" />
+        </div>
+        <div class="ba-divider"></div>
+        <span class="ba-label ba-label-before">Syrová</span>
+        <span class="ba-label ba-label-after">Pražená</span>
+        <div class="ba-handle" id="baHandle" role="slider" tabindex="0" aria-label="Porovnat syrová a pražená zrna" aria-valuemin="4" aria-valuemax="96" aria-valuenow="50">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 7l-5 5 5 5M16 7l5 5-5 5"/></svg>
+        </div>
+      </div>
+      <p class="ba-caption rv">Stejná zrna — před a po pražení u The Naughty Dog.</p>
+
+      <div class="eshop-grid">
+        <div class="eshop-photo">
+          <img src="images/eshop-beans.jpg" alt="Čerstvě pražená zrnková káva The Naughty Dog" loading="lazy" />
+          <span class="price-tag">od 280 Kč</span>
+          <span class="caption">Zrnková káva, 250 g</span>
+        </div>
+        <div class="eshop-photo">
+          <img src="images/stock-eshop-roast.jpg" alt="Výběr pražené zrnkové kávy v papírových sáčcích" loading="lazy" />
+          <span class="price-tag">od 280 Kč</span>
+          <span class="caption">Výběr pražení dle chuti</span>
+        </div>
+        <div class="eshop-photo">
+          <img src="images/eshop-trio.jpg" alt="Mletá káva, latte art a zrna The Naughty Dog" loading="lazy" />
+          <span class="price-tag">od 280 Kč</span>
+          <span class="caption">Mletá i celá zrna</span>
+        </div>
+      </div>
+
+      <div class="eshop-note">
+        <p>E-shop s pevným ceníkem a platbou kartou připravujeme. Do té doby si kávu objednáte jednoduše napřímo — napište nám přes Instagram nebo zavolejte.</p>
+        <div class="hero-ctas" style="justify-content:center;">
+          <a href="https://www.instagram.com/polovinakafe/" target="_blank" rel="noopener" class="btn btn-primary">Napsat přes Instagram</a>
+          <a href="tel:+420736727098" class="btn btn-ghost">Zavolat 736 727 098</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="rezervace">
+    <div class="wrap">
+      <div class="section-head rv">
+        <div class="eyebrow" style="justify-content:center;">Rychlá rezervace</div>
+        <h2>Zarezervujte si <em>stůl předem.</em></h2>
+        <p>Vyplňte pár údajů, pošleme to rovnou na WhatsApp — potvrdíme vám to zpátky.</p>
+      </div>
+      <form class="reserve-card rv d1" id="reserveForm">
+        <div class="reserve-grid">
+          <div class="reserve-field">
+            <label for="rName">Jméno</label>
+            <input type="text" id="rName" name="name" required autocomplete="name" />
+          </div>
+          <div class="reserve-field">
+            <label for="rPeople">Počet osob</label>
+            <input type="number" id="rPeople" name="people" min="1" max="20" value="2" required />
+          </div>
+          <div class="reserve-field">
+            <label for="rDate">Datum</label>
+            <input type="date" id="rDate" name="date" required />
+          </div>
+          <div class="reserve-field">
+            <label for="rTime">Čas</label>
+            <input type="time" id="rTime" name="time" required />
+          </div>
+          <div class="reserve-field full">
+            <label for="rNote">Poznámka (nepovinné)</label>
+            <textarea id="rNote" name="note" placeholder="Např. venku, u okna…"></textarea>
+          </div>
+        </div>
+        <div class="reserve-actions">
+          <button type="submit" class="btn btn-primary">Poslat přes WhatsApp</button>
+          <span class="reserve-note">Otevře WhatsApp s předvyplněnou zprávou</span>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <section class="section section-raised" id="kontakt">
+    <div class="wrap">
+      <div class="section-head rv">
+        <div class="ornament" aria-hidden="true"><span class="oline"></span><span class="odot"></span><span class="odiamond"></span><span class="odot"></span><span class="oline"></span></div>
+        <div class="eyebrow" style="justify-content:center;">Praktické info</div>
+        <h2>Kde nás <em>najdete.</em></h2>
+        <p>Zastavte se na kávu — jsme otevřeni každý den, i o víkendu.</p>
+      </div>
+
+      <div class="contact-grid">
+        <div class="info-card rv">
+          <div class="info-row">
+            <span class="ic"><svg class="icon" width="19" height="19"><use href="#i-pin"/></svg></span>
+            <div><strong>Adresa</strong><span class="sub">Třída T. G. Masaryka 1084, 413 01 Roudnice nad Labem</span></div>
+          </div>
+          <div class="info-row">
+            <span class="ic"><svg class="icon" width="19" height="19"><use href="#i-clock"/></svg></span>
+            <div style="width:100%;">
+              <strong>Otevírací doba</strong>
+              <table class="hours-table"><tr><td>Pondělí – Neděle</td><td>7:30 – 17:00</td></tr></table>
+            </div>
+          </div>
+          <div class="info-row">
+            <span class="ic"><svg class="icon" width="19" height="19"><use href="#i-phone"/></svg></span>
+            <div><strong>Telefon</strong><span class="sub">736 727 098</span></div>
+          </div>
+          <div class="info-row">
+            <span class="ic"><svg class="icon" width="19" height="19"><use href="#i-card"/></svg></span>
+            <div><strong>Cena na osobu</strong><span class="sub">orientačně 100–200 Kč</span></div>
+          </div>
+          <div class="social-row">
+            <a href="https://www.facebook.com/polovinakafe/" target="_blank" rel="noopener" class="social-btn" aria-label="Facebook"><svg class="icon icon-fill" width="18" height="18"><use href="#i-facebook"/></svg></a>
+            <a href="https://www.instagram.com/polovinakafe/" target="_blank" rel="noopener" class="social-btn" aria-label="Instagram"><svg class="icon" width="18" height="18"><use href="#i-instagram"/></svg></a>
+          </div>
+        </div>
+
+        <div class="map-frame rv d1">
+          <iframe
+            loading="lazy"
+            allowfullscreen
+            referrerpolicy="no-referrer-when-downgrade"
+            src="https://www.google.com/maps?q=T%C5%99%C3%ADda+T.+G.+Masaryka+1084%2C+Roudnice+nad+Labem&output=embed">
+          </iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <a href="#top" class="logo">
+          <svg class="logo-mark" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="24" cy="24" r="19" fill="none" stroke="currentColor" stroke-width="3"/>
+            <path d="M24 5a19 19 0 0 1 0 38z" fill="currentColor"/>
+          </svg>
+          Polovina kafe
+        </a>
+        <p>Polovina kafe, Roudnice nad Labem — otevřeno pro lidi, notebooky i packy.</p>
+      </div>
+      <div class="footer-links">
+        <a href="#o-nas">O nás</a>
+        <a href="#menu">Menu</a>
+        <a href="#akce">Akce</a>
+        <a href="#galerie">Galerie</a>
+        <a href="#eshop">E-shop</a>
+        <a href="#rezervace">Rezervace</a>
+        <a href="#kontakt">Kontakt</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Polovina kafe, Roudnice nad Labem</span>
+      <span>Třída T. G. Masaryka 1084 · 736 727 098</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+  const header = document.getElementById('siteHeader');
+  const burgerBtn = document.getElementById('burgerBtn');
+  burgerBtn.addEventListener('click', () => {
+    const isOpen = header.classList.toggle('menu-open');
+    burgerBtn.setAttribute('aria-expanded', String(isOpen));
+  });
+  document.querySelectorAll('.mobile-panel a').forEach(a => {
+    a.addEventListener('click', () => {
+      header.classList.remove('menu-open');
+      burgerBtn.setAttribute('aria-expanded', 'false');
+    });
+  });
+
+  const onScroll = () => header.classList.toggle('scrolled', window.scrollY > 12);
+  onScroll();
+  window.addEventListener('scroll', onScroll, { passive: true });
+
+  // Open/closed status — denně 7:30–17:00
+  function updateStatus(){
+    const now = new Date();
+    const minutes = now.getHours() * 60 + now.getMinutes();
+    const isOpen = minutes >= (7 * 60 + 30) && minutes < (17 * 60);
+
+    [
+      ['statusBadge', 'statusText'],
+      ['statusBadgeMobile', 'statusTextMobile']
+    ].forEach(([badgeId, textId]) => {
+      const badge = document.getElementById(badgeId);
+      const text = document.getElementById(textId);
+      if (!badge || !text) return;
+      badge.classList.toggle('open', isOpen);
+      text.textContent = isOpen ? 'Otevřeno' : 'Zavřeno';
+    });
+
+    const hoursChip = document.getElementById('hoursChip');
+    const hoursChipText = document.getElementById('hoursChipText');
+    if (hoursChip && hoursChipText) {
+      hoursChip.classList.toggle('open', isOpen);
+      hoursChipText.textContent = isOpen ? 'Otevřeno · zavíráme v 17:00' : 'Zavřeno · otevíráme v 7:30';
+    }
+  }
+  updateStatus();
+  setInterval(updateStatus, 60000);
+
+  // Živé počasí pro Roudnici nad Labem — tiché selhání, chip zůstane skrytý
+  (function(){
+    const chip = document.getElementById('weatherChip');
+    const text = document.getElementById('weatherChipText');
+    if (!chip || !text) return;
+    fetch('https://api.open-meteo.com/v1/forecast?latitude=50.4264&longitude=14.2535&current=temperature_2m,weather_code&timezone=Europe%2FPrague')
+      .then(r => r.ok ? r.json() : Promise.reject())
+      .then(data => {
+        const cur = data && data.current;
+        if (!cur || typeof cur.temperature_2m !== 'number') return;
+        const t = Math.round(cur.temperature_2m);
+        const code = cur.weather_code;
+        let mood;
+        if ([0, 1].includes(code)) mood = 'slunečno';
+        else if ([2, 3, 45, 48].includes(code)) mood = 'zataženo';
+        else if ([71, 73, 75, 77, 85, 86].includes(code)) mood = 'sněží';
+        else if ([51, 53, 55, 61, 63, 65, 80, 81, 82, 95, 96, 99].includes(code)) mood = 'prší, pojďte dovnitř';
+        else mood = 'proměnlivo';
+        text.textContent = t + '°C · ' + mood;
+        chip.hidden = false;
+      })
+      .catch(() => {});
+  })();
+
+  // Rezervace — sestaví zprávu a otevře WhatsApp (bez backendu)
+  (function(){
+    const form = document.getElementById('reserveForm');
+    if (!form) return;
+    const dateInput = document.getElementById('rDate');
+    const today = new Date();
+    const yyyy = today.getFullYear();
+    const mm = String(today.getMonth() + 1).padStart(2, '0');
+    const dd = String(today.getDate()).padStart(2, '0');
+    dateInput.min = `${yyyy}-${mm}-${dd}`;
+    dateInput.value = `${yyyy}-${mm}-${dd}`;
+
+    form.addEventListener('submit', (e) => {
+      e.preventDefault();
+      const name = document.getElementById('rName').value.trim();
+      const people = document.getElementById('rPeople').value;
+      const date = document.getElementById('rDate').value;
+      const time = document.getElementById('rTime').value;
+      const note = document.getElementById('rNote').value.trim();
+      const dateHuman = date ? new Date(date + 'T00:00:00').toLocaleDateString('cs-CZ', { weekday: 'long', day: 'numeric', month: 'long' }) : '';
+
+      const lines = [
+        'Dobrý den, chtěl(a) bych zarezervovat stůl v Polovina kafe.',
+        'Jméno: ' + name,
+        'Počet osob: ' + people,
+        'Datum: ' + dateHuman,
+        'Čas: ' + time,
+      ];
+      if (note) lines.push('Poznámka: ' + note);
+      lines.push('Děkuji!');
+
+      const text = encodeURIComponent(lines.join('\n'));
+      window.open('https://wa.me/420736727098?text=' + text, '_blank', 'noopener');
+    });
+  })();
+
+  // Before/After — syrová vs. pražená zrna, drag + klávesnice
+  (function(){
+    const slider = document.getElementById('baSlider');
+    const handle = document.getElementById('baHandle');
+    if (!slider || !handle) return;
+    function setPos(pct){
+      pct = Math.min(96, Math.max(4, pct));
+      slider.style.setProperty('--ba-pos', pct + '%');
+      handle.setAttribute('aria-valuenow', Math.round(pct));
+    }
+    function posFromClientX(clientX){
+      const rect = slider.getBoundingClientRect();
+      return ((clientX - rect.left) / rect.width) * 100;
+    }
+    let dragging = false;
+    handle.addEventListener('pointerdown', (e) => {
+      dragging = true;
+      handle.setPointerCapture(e.pointerId);
+      setPos(posFromClientX(e.clientX));
+    });
+    handle.addEventListener('pointermove', (e) => { if (dragging) setPos(posFromClientX(e.clientX)); });
+    handle.addEventListener('pointerup', (e) => { dragging = false; try { handle.releasePointerCapture(e.pointerId); } catch(err) {} });
+    handle.addEventListener('pointercancel', () => { dragging = false; });
+    handle.addEventListener('keydown', (e) => {
+      const current = parseFloat(getComputedStyle(slider).getPropertyValue('--ba-pos')) || 50;
+      if (e.key === 'ArrowLeft') { setPos(current - 5); e.preventDefault(); }
+      if (e.key === 'ArrowRight') { setPos(current + 5); e.preventDefault(); }
+      if (e.key === 'Home') { setPos(4); e.preventDefault(); }
+      if (e.key === 'End') { setPos(96); e.preventDefault(); }
+    });
+    slider.addEventListener('click', (e) => {
+      if (e.target.closest('.ba-handle')) return;
+      setPos(posFromClientX(e.clientX));
+    });
+  })();
+
+  // Filtr menu — "chasing thumb" segmented control
+  (function(){
+    const seg = document.getElementById('menuFilter');
+    const grid = document.getElementById('menuGrid');
+    if (!seg || !grid) return;
+    const thumb = seg.querySelector('.mfilter-thumb');
+    const items = Array.from(seg.querySelectorAll('.mfilter-item'));
+    const cards = Array.from(grid.querySelectorAll('.menu-card'));
+    let activeIndex = 0;
+
+    function moveThumbTo(el){
+      thumb.style.left = el.offsetLeft + 'px';
+      thumb.style.width = el.offsetWidth + 'px';
+    }
+    function applyFilter(filter){
+      cards.forEach(card => { card.hidden = !(filter === 'all' || card.getAttribute('data-category') === filter); });
+    }
+    function select(index, focus){
+      activeIndex = index;
+      items.forEach((btn, i) => btn.setAttribute('aria-checked', i === index ? 'true' : 'false'));
+      moveThumbTo(items[index]);
+      applyFilter(items[index].getAttribute('data-filter'));
+      if (focus) items[index].focus();
+    }
+    items.forEach((btn, i) => {
+      btn.addEventListener('click', () => { if (i !== activeIndex) select(i, false); });
+      btn.addEventListener('keydown', (e) => {
+        const last = items.length - 1;
+        let next = null;
+        if (e.key === 'ArrowRight' || e.key === 'ArrowDown') next = Math.min(last, activeIndex + 1);
+        else if (e.key === 'ArrowLeft' || e.key === 'ArrowUp') next = Math.max(0, activeIndex - 1);
+        else if (e.key === 'Home') next = 0;
+        else if (e.key === 'End') next = last;
+        if (next === null) return;
+        e.preventDefault();
+        select(next, true);
+      });
+    });
+    moveThumbTo(items[0]);
+    window.addEventListener('resize', () => moveThumbTo(items[activeIndex]));
+  })();
+
+  // Baristova poznámka — skrytá, odhalí se na klik
+  (function(){
+    const box = document.getElementById('noteBox');
+    const btn = document.getElementById('noteBtn');
+    const text = document.getElementById('noteReveal');
+    if (!box || !btn || !text) return;
+    btn.addEventListener('click', () => {
+      box.classList.add('revealed');
+      text.hidden = false;
+    });
+  })();
+
+  // Scroll reveal (.rv -> .rv.in) via IntersectionObserver
+  (function(){
+    const items = document.querySelectorAll('.rv');
+    if (!items.length) return;
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting){ entry.target.classList.add('in'); io.unobserve(entry.target); }
+      });
+    }, { threshold: 0.15, rootMargin: '0px 0px -40px 0px' });
+    items.forEach(el => io.observe(el));
+  })();
+
+  // Disc — klepnutí přepne barevnou/černobílou půlku (touch zařízení)
+  document.querySelectorAll('.disc').forEach(d => {
+    d.addEventListener('click', () => {
+      const cur = getComputedStyle(d).getPropertyValue('--s').trim();
+      d.style.setProperty('--s', cur === '0%' ? '50%' : '0%');
+    });
+  });
+
+  // Accordion gallery (vanilla port of the React Bits AccordionGallery, driven by GSAP)
+  (function(){
+    const root = document.getElementById('galleryAccordion');
+    if (!root || typeof gsap === 'undefined') return;
+    const panels = Array.from(root.querySelectorAll('.ag-panel'));
+    const count = panels.length;
+    let active = panels.findIndex(p => p.classList.contains('ag-panel--active'));
+    if (active < 0) active = 0;
+
+    const expandRatio = 0.55, tilt = 8, parallax = 0.4, duration = 0.6, ease = 'power3.out', stagger = 0.06;
+    const prefersReduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    const isVertical = () => window.matchMedia('(max-width:720px)').matches;
+    let mediaSize = 320;
+
+    function measure(){
+      const rect = root.getBoundingClientRect();
+      const usable = Math.max(rect.width - 10 * (count - 1), 120);
+      mediaSize = Math.max(140, usable * Math.min(Math.max(expandRatio, 0.2), 0.9) * 1.22);
+      root.style.setProperty('--ag-media-size', mediaSize + 'px');
+    }
+
+    function applyLayout(animate){
+      const r = Math.min(Math.max(expandRatio, 0.2), 0.9);
+      const grow = count > 1 ? (r * (count - 1)) / (1 - r) : 1;
+      const dur = animate && !prefersReduced ? duration : 0;
+      const vertical = isVertical();
+      const tl = gsap.timeline();
+
+      panels.forEach((panel, i) => {
+        const isActive = i === active;
+        const media = panel.querySelector('.ag-panel__media');
+        const bar = panel.querySelector('.ag-panel__bar');
+        const text = panel.querySelector('.ag-panel__text');
+        const rot = isActive ? 0 : (i < active ? tilt : -tilt);
+        const rotProp = vertical ? {} : { rotateY: rot };
+
+        tl.to(panel, Object.assign({ flexGrow: isActive ? grow : 1, duration: dur, ease }, rotProp), 0);
+        panel.classList.toggle('ag-panel--active', isActive);
+        panel.setAttribute('aria-current', isActive ? 'true' : 'false');
+
+        if (media){
+          const drift = Math.max(-1.5, Math.min(1.5, active - i));
+          const shift = drift * parallax * mediaSize * 0.06;
+          const gray = isActive ? 0 : 1;
+          tl.to(media, {
+            xPercent: -50, yPercent: -50,
+            x: vertical ? 0 : (isActive ? 0 : shift),
+            y: vertical ? (isActive ? 0 : shift) : 0,
+            '--ag-gray': gray, '--ag-dim': isActive ? 0 : 0.35,
+            duration: dur, ease
+          }, 0);
+        }
+        if (bar && text){
+          if (isActive) tl.to([bar, text], { opacity: 1, x: 0, duration: dur, ease, stagger: prefersReduced ? 0 : stagger }, 0);
+          else tl.to([bar, text], { opacity: 0, x: -14, duration: dur * 0.6, ease }, 0);
+        }
+      });
+    }
+
+    function setActive(i){
+      if (i === active) return;
+      active = i;
+      applyLayout(true);
+    }
+
+    measure();
+    applyLayout(false);
+    window.addEventListener('resize', measure);
+
+    panels.forEach((panel, i) => {
+      panel.addEventListener('mouseenter', () => setActive(i));
+      panel.addEventListener('focus', () => setActive(i));
+      panel.addEventListener('click', () => setActive(i));
+      panel.addEventListener('keydown', (e) => {
+        if (e.key === 'ArrowRight' || e.key === 'ArrowDown'){
+          e.preventDefault(); const n = (i + 1) % count; setActive(n); panels[n].focus();
+        } else if (e.key === 'ArrowLeft' || e.key === 'ArrowUp'){
+          e.preventDefault(); const p = (i - 1 + count) % count; setActive(p); panels[p].focus();
+        }
+      });
+    });
+  })();
+
+  // ClickSpark (vanilla port of the React Bits ClickSpark effect)
+  (function(){
+    const canvas = document.getElementById('clickSparkCanvas');
+    if (!canvas) return;
+    const ctx = canvas.getContext('2d');
+    const prefersReduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    if (prefersReduced) return;
+
+    const sparkSize = 9, sparkRadius = 16, sparkCount = 8, duration = 400, extraScale = 1;
+    let sparks = [];
+    let resizeTimeout;
+
+    function resizeCanvas(){
+      const dpr = window.devicePixelRatio || 1;
+      canvas.width = window.innerWidth * dpr;
+      canvas.height = window.innerHeight * dpr;
+      canvas.style.width = window.innerWidth + 'px';
+      canvas.style.height = window.innerHeight + 'px';
+      ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+    }
+    resizeCanvas();
+    window.addEventListener('resize', () => { clearTimeout(resizeTimeout); resizeTimeout = setTimeout(resizeCanvas, 100); });
+
+    function ease(t){ return t * (2 - t); }
+
+    function draw(timestamp){
+      ctx.clearRect(0, 0, window.innerWidth, window.innerHeight);
+      const sparkColor = getComputedStyle(document.documentElement).getPropertyValue('--ink').trim() || '#141414';
+
+      sparks = sparks.filter(spark => {
+        const elapsed = timestamp - spark.startTime;
+        if (elapsed >= duration) return false;
+        const progress = elapsed / duration;
+        const eased = ease(progress);
+        const distance = eased * sparkRadius * extraScale;
+        const lineLength = sparkSize * (1 - eased);
+        const x1 = spark.x + distance * Math.cos(spark.angle);
+        const y1 = spark.y + distance * Math.sin(spark.angle);
+        const x2 = spark.x + (distance + lineLength) * Math.cos(spark.angle);
+        const y2 = spark.y + (distance + lineLength) * Math.sin(spark.angle);
+        ctx.strokeStyle = sparkColor;
+        ctx.lineWidth = 1.5;
+        ctx.beginPath();
+        ctx.moveTo(x1, y1);
+        ctx.lineTo(x2, y2);
+        ctx.stroke();
+        return true;
+      });
+      requestAnimationFrame(draw);
+    }
+    requestAnimationFrame(draw);
+
+    document.addEventListener('click', (e) => {
+      const x = e.clientX, y = e.clientY;
+      const now = performance.now();
+      for (let i = 0; i < sparkCount; i++){
+        sparks.push({ x, y, angle: (2 * Math.PI * i) / sparkCount, startTime: now });
+      }
+    });
+  })();
+</script>
+
+<script>
+(async () => {
+  // CircularGallery — vanilla port of the React Bits component (React/JSX stripped, same WebGL core)
+  // Loaded via dynamic import() from a classic script (not type="module") so this still runs
+  // when the page is opened directly as a file:// document, where <script type="module"> is blocked.
+  let Camera, Mesh, Plane, Program, Renderer, Texture, Transform;
+  try {
+    ({ Camera, Mesh, Plane, Program, Renderer, Texture, Transform } = await import('https://cdn.jsdelivr.net/npm/ogl@1.0.11/+esm'));
+  } catch (err) {
+    console.error('CircularGallery: failed to load ogl from CDN', err);
+    return;
+  }
+
+  function lerp(p1, p2, t){ return p1 + (p2 - p1) * t; }
+  function debounce(func, wait){
+    let timeout;
+    return function(...args){ clearTimeout(timeout); timeout = setTimeout(() => func.apply(this, args), wait); };
+  }
+  function autoBind(instance){
+    const proto = Object.getPrototypeOf(instance);
+    Object.getOwnPropertyNames(proto).forEach(key => {
+      if (key !== 'constructor' && typeof instance[key] === 'function') instance[key] = instance[key].bind(instance);
+    });
+  }
+  function getFontSize(font){ const m = font.match(/(\d+)px/); return m ? parseInt(m[1], 10) : 30; }
+  function createTextTexture(gl, text, font = 'bold 30px monospace', color = 'black'){
+    const canvas = document.createElement('canvas');
+    const context = canvas.getContext('2d');
+    context.font = font;
+    const metrics = context.measureText(text);
+    const textWidth = Math.ceil(metrics.width);
+    const textHeight = Math.ceil(getFontSize(font) * 1.2);
+    canvas.width = textWidth + 20;
+    canvas.height = textHeight + 20;
+    context.font = font;
+    context.fillStyle = color;
+    context.textBaseline = 'middle';
+    context.textAlign = 'center';
+    context.clearRect(0, 0, canvas.width, canvas.height);
+    context.fillText(text, canvas.width / 2, canvas.height / 2);
+    const texture = new Texture(gl, { generateMipmaps: false });
+    texture.image = canvas;
+    return { texture, width: canvas.width, height: canvas.height };
+  }
+
+  class Title {
+    constructor({ gl, plane, text, textColor = '#545050', font = '30px sans-serif' }){
+      autoBind(this);
+      this.gl = gl; this.plane = plane; this.text = text; this.textColor = textColor; this.font = font;
+      this.createMesh();
+    }
+    createMesh(){
+      const { texture, width, height } = createTextTexture(this.gl, this.text, this.font, this.textColor);
+      const geometry = new Plane(this.gl);
+      const program = new Program(this.gl, {
+        vertex: `attribute vec3 position; attribute vec2 uv; uniform mat4 modelViewMatrix; uniform mat4 projectionMatrix; varying vec2 vUv;
+          void main(){ vUv = uv; gl_Position = projectionMatrix * modelViewMatrix * vec4(position, 1.0); }`,
+        fragment: `precision highp float; uniform sampler2D tMap; varying vec2 vUv;
+          void main(){ vec4 color = texture2D(tMap, vUv); if (color.a < 0.1) discard; gl_FragColor = color; }`,
+        uniforms: { tMap: { value: texture } },
+        transparent: true
+      });
+      this.mesh = new Mesh(this.gl, { geometry, program });
+      const aspect = width / height;
+      const textHeight = this.plane.scale.y * 0.15;
+      const textWidth = textHeight * aspect;
+      this.mesh.scale.set(textWidth, textHeight, 1);
+      this.mesh.position.y = -this.plane.scale.y * 0.5 - textHeight * 0.5 - 0.05;
+      this.mesh.setParent(this.plane);
+    }
+  }
+
+  class Media {
+    constructor({ geometry, gl, image, index, length, scene, screen, text, viewport, bend, textColor, borderRadius = 0, font }){
+      this.extra = 0;
+      this.geometry = geometry; this.gl = gl; this.image = image; this.index = index; this.length = length;
+      this.scene = scene; this.screen = screen; this.text = text; this.viewport = viewport; this.bend = bend;
+      this.textColor = textColor; this.borderRadius = borderRadius; this.font = font;
+      this.createShader(); this.createMesh(); this.createTitle(); this.onResize();
+    }
+    createShader(){
+      const texture = new Texture(this.gl, { generateMipmaps: true });
+      this.program = new Program(this.gl, {
+        depthTest: false, depthWrite: false,
+        vertex: `precision highp float; attribute vec3 position; attribute vec2 uv; uniform mat4 modelViewMatrix; uniform mat4 projectionMatrix; uniform float uTime; uniform float uSpeed; varying vec2 vUv;
+          void main(){ vUv = uv; vec3 p = position; p.z = (sin(p.x * 4.0 + uTime) * 1.5 + cos(p.y * 2.0 + uTime) * 1.5) * (0.1 + uSpeed * 0.5); gl_Position = projectionMatrix * modelViewMatrix * vec4(p, 1.0); }`,
+        fragment: `precision highp float; uniform vec2 uImageSizes; uniform vec2 uPlaneSizes; uniform sampler2D tMap; uniform float uBorderRadius; varying vec2 vUv;
+          float roundedBoxSDF(vec2 p, vec2 b, float r){ vec2 d = abs(p) - b; return length(max(d, vec2(0.0))) + min(max(d.x, d.y), 0.0) - r; }
+          void main(){
+            vec2 ratio = vec2(
+              min((uPlaneSizes.x / uPlaneSizes.y) / (uImageSizes.x / uImageSizes.y), 1.0),
+              min((uPlaneSizes.y / uPlaneSizes.x) / (uImageSizes.y / uImageSizes.x), 1.0)
+            );
+            vec2 uv = vec2(vUv.x * ratio.x + (1.0 - ratio.x) * 0.5, vUv.y * ratio.y + (1.0 - ratio.y) * 0.5);
+            vec4 color = texture2D(tMap, uv);
+            float d = roundedBoxSDF(vUv - 0.5, vec2(0.5 - uBorderRadius), uBorderRadius);
+            float edgeSmooth = 0.002;
+            float alpha = 1.0 - smoothstep(-edgeSmooth, edgeSmooth, d);
+            gl_FragColor = vec4(color.rgb, alpha);
+          }`,
+        uniforms: {
+          tMap: { value: texture }, uPlaneSizes: { value: [0, 0] }, uImageSizes: { value: [0, 0] },
+          uSpeed: { value: 0 }, uTime: { value: 100 * Math.random() }, uBorderRadius: { value: this.borderRadius }
+        },
+        transparent: true
+      });
+      const img = new Image();
+      img.crossOrigin = 'anonymous';
+      img.src = this.image;
+      img.onload = () => {
+        texture.image = img;
+        this.program.uniforms.uImageSizes.value = [img.naturalWidth, img.naturalHeight];
+      };
+    }
+    createMesh(){
+      this.plane = new Mesh(this.gl, { geometry: this.geometry, program: this.program });
+      this.plane.setParent(this.scene);
+    }
+    createTitle(){
+      this.title = new Title({ gl: this.gl, plane: this.plane, text: this.text, textColor: this.textColor, font: this.font });
+    }
+    update(scroll, direction){
+      this.plane.position.x = this.x - scroll.current - this.extra;
+      const x = this.plane.position.x;
+      const H = this.viewport.width / 2;
+      if (this.bend === 0){
+        this.plane.position.y = 0; this.plane.rotation.z = 0;
+      } else {
+        const B_abs = Math.abs(this.bend);
+        const R = (H * H + B_abs * B_abs) / (2 * B_abs);
+        const effectiveX = Math.min(Math.abs(x), H);
+        const arc = R - Math.sqrt(R * R - effectiveX * effectiveX);
+        if (this.bend > 0){ this.plane.position.y = -arc; this.plane.rotation.z = -Math.sign(x) * Math.asin(effectiveX / R); }
+        else { this.plane.position.y = arc; this.plane.rotation.z = Math.sign(x) * Math.asin(effectiveX / R); }
+      }
+      this.speed = scroll.current - scroll.last;
+      this.program.uniforms.uTime.value += 0.04;
+      this.program.uniforms.uSpeed.value = this.speed;
+      const planeOffset = this.plane.scale.x / 2;
+      const viewportOffset = this.viewport.width / 2;
+      this.isBefore = this.plane.position.x + planeOffset < -viewportOffset;
+      this.isAfter = this.plane.position.x - planeOffset > viewportOffset;
+      if (direction === 'right' && this.isBefore){ this.extra -= this.widthTotal; this.isBefore = this.isAfter = false; }
+      if (direction === 'left' && this.isAfter){ this.extra += this.widthTotal; this.isBefore = this.isAfter = false; }
+    }
+    onResize({ screen, viewport } = {}){
+      if (screen) this.screen = screen;
+      if (viewport){
+        this.viewport = viewport;
+        if (this.plane.program.uniforms.uViewportSizes) this.plane.program.uniforms.uViewportSizes.value = [this.viewport.width, this.viewport.height];
+      }
+      this.scale = this.screen.height / 1500;
+      this.plane.scale.y = (this.viewport.height * (900 * this.scale)) / this.screen.height;
+      this.plane.scale.x = (this.viewport.width * (700 * this.scale)) / this.screen.width;
+      this.plane.program.uniforms.uPlaneSizes.value = [this.plane.scale.x, this.plane.scale.y];
+      this.padding = 2;
+      this.width = this.plane.scale.x + this.padding;
+      this.widthTotal = this.width * this.length;
+      this.x = this.width * this.index;
+    }
+  }
+
+  class CircularGalleryApp {
+    constructor(container, { items, bend, textColor = '#ffffff', borderRadius = 0, font = 'bold 30px sans-serif', scrollSpeed = 2, scrollEase = 0.05 } = {}){
+      this.container = container;
+      this.scrollSpeed = scrollSpeed;
+      this.scroll = { ease: scrollEase, current: 0, target: 0, last: 0 };
+      this.onCheckDebounce = debounce(this.onCheck.bind(this), 200);
+      this.createRenderer(); this.createCamera(); this.createScene();
+      this.onResize();
+      this.createGeometry();
+      this.createMedias(items, bend, textColor, borderRadius, font);
+      this.update();
+      this.addEventListeners();
+    }
+    createRenderer(){
+      this.renderer = new Renderer({ alpha: true, antialias: true, preserveDrawingBuffer: true, dpr: Math.min(window.devicePixelRatio || 1, 2) });
+      this.gl = this.renderer.gl;
+      this.gl.clearColor(0, 0, 0, 0);
+      this.container.appendChild(this.gl.canvas);
+    }
+    createCamera(){ this.camera = new Camera(this.gl); this.camera.fov = 45; this.camera.position.z = 20; }
+    createScene(){ this.scene = new Transform(); }
+    createGeometry(){ this.planeGeometry = new Plane(this.gl, { heightSegments: 50, widthSegments: 100 }); }
+    createMedias(items, bend = 1, textColor, borderRadius, font){
+      this.mediasImages = items.concat(items);
+      this.medias = this.mediasImages.map((data, index) => new Media({
+        geometry: this.planeGeometry, gl: this.gl, image: data.image, index, length: this.mediasImages.length,
+        scene: this.scene, screen: this.screen, text: data.text, viewport: this.viewport, bend, textColor, borderRadius, font
+      }));
+    }
+    onTouchDown(e){ this.isDown = true; this.scroll.position = this.scroll.current; this.start = e.touches ? e.touches[0].clientX : e.clientX; }
+    onTouchMove(e){
+      if (!this.isDown) return;
+      const x = e.touches ? e.touches[0].clientX : e.clientX;
+      const distance = (this.start - x) * (this.scrollSpeed * 0.025);
+      this.scroll.target = this.scroll.position + distance;
+    }
+    onTouchUp(){ this.isDown = false; this.onCheck(); }
+    onWheel(e){
+      const delta = e.deltaY || e.wheelDelta || e.detail;
+      this.scroll.target += (delta > 0 ? this.scrollSpeed : -this.scrollSpeed) * 0.2;
+      this.onCheckDebounce();
+    }
+    onCheck(){
+      if (!this.medias || !this.medias[0]) return;
+      const width = this.medias[0].width;
+      const itemIndex = Math.round(Math.abs(this.scroll.target) / width);
+      const item = width * itemIndex;
+      this.scroll.target = this.scroll.target < 0 ? -item : item;
+    }
+    onResize(){
+      this.screen = { width: this.container.clientWidth, height: this.container.clientHeight };
+      this.renderer.setSize(this.screen.width, this.screen.height);
+      this.camera.perspective({ aspect: this.screen.width / this.screen.height });
+      const fov = (this.camera.fov * Math.PI) / 180;
+      const height = 2 * Math.tan(fov / 2) * this.camera.position.z;
+      const width = height * this.camera.aspect;
+      this.viewport = { width, height };
+      if (this.medias) this.medias.forEach(media => media.onResize({ screen: this.screen, viewport: this.viewport }));
+    }
+    update(){
+      this.scroll.current = lerp(this.scroll.current, this.scroll.target, this.scroll.ease);
+      const direction = this.scroll.current > this.scroll.last ? 'right' : 'left';
+      if (this.medias) this.medias.forEach(media => media.update(this.scroll, direction));
+      this.renderer.render({ scene: this.scene, camera: this.camera });
+      this.scroll.last = this.scroll.current;
+      this.raf = window.requestAnimationFrame(this.update.bind(this));
+    }
+    addEventListeners(){
+      this.boundOnResize = this.onResize.bind(this);
+      this.boundOnWheel = this.onWheel.bind(this);
+      this.boundOnTouchDown = this.onTouchDown.bind(this);
+      this.boundOnTouchMove = this.onTouchMove.bind(this);
+      this.boundOnTouchUp = this.onTouchUp.bind(this);
+      window.addEventListener('resize', this.boundOnResize);
+      this.container.addEventListener('wheel', this.boundOnWheel, { passive: true });
+      this.container.addEventListener('mousedown', this.boundOnTouchDown);
+      window.addEventListener('mousemove', this.boundOnTouchMove);
+      window.addEventListener('mouseup', this.boundOnTouchUp);
+      this.container.addEventListener('touchstart', this.boundOnTouchDown, { passive: true });
+      this.container.addEventListener('touchmove', this.boundOnTouchMove, { passive: true });
+      window.addEventListener('touchend', this.boundOnTouchUp);
+    }
+  }
+
+  function initCircularGallery(container, opts){
+    container.classList.add('circular-gallery');
+    container.tabIndex = 0;
+    container.setAttribute('role', 'region');
+    container.setAttribute('aria-label', 'Kruhová galerie fotek kavárny. Posun kolečkem myši nebo tažením.');
+    return new CircularGalleryApp(container, opts);
+  }
+
+  const momentkyEl = document.getElementById('momentkyGallery');
+  if (momentkyEl){
+    const isDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+    initCircularGallery(momentkyEl, {
+      items: [
+        { image: 'images/stock-hero.jpg', text: 'Ráno' },
+        { image: 'images/stock-nomad.jpg', text: 'Notebook & pes' },
+        { image: 'images/stock-about.jpg', text: 'Interiér' },
+        { image: 'images/disc-latte.jpg', text: 'Flat white' },
+        { image: 'images/stock-akce.jpg', text: 'Dílna' },
+        { image: 'images/stock-menu.jpg', text: 'Pauza' },
+        { image: 'images/eshop-beans.jpg', text: 'Zrna' },
+        { image: 'images/disc-espresso.jpg', text: 'Espresso' }
+      ],
+      bend: 2,
+      textColor: isDark ? '#f0f0f0' : '#141414',
+      borderRadius: 0.04,
+      font: 'italic 500 26px "Playfair Display"',
+      scrollSpeed: 3,
+      scrollEase: 0.065
+    });
+  }
+})();
+</script>
+
+</body>
+</html>

@@ -1,0 +1,5 @@
+.DS_Store
+
+# Unused leftover asset (not referenced by index.html, 4MB 3D model from an earlier
+# experiment that was replaced with a plain photo) — kept on disk, excluded from git.
+models/
